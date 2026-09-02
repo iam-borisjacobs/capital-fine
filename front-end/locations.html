@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Find a Branch or ATM Near You - Royal Bank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="temp/custom/assets/css/rbc-style.css">
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="rbc-topbar">
+        <div class="rbc-container">
+            <div class="rbc-topbar-inner">
+                <ul class="rbc-segment-links">
+                    <li><a href="index.html" class="rbc-segment-link active">Personal</a></li>
+                    <li><a href="business.html" class="rbc-segment-link">Business</a></li>
+                    <li><a href="commercial.html" class="rbc-segment-link">Commercial</a></li>
+                    <li><a href="investments.html" class="rbc-segment-link">Wealth</a></li>
+                    <li><a href="about.html" class="rbc-segment-link">About RBC</a></li>
+                </ul>
+                <div class="rbc-topbar-right">
+                    <a href="rates.html"><i class="fas fa-chart-line"></i> Rates &amp; FX</a>
+                    <a href="locations.html" style="color: var(--rbc-gold);"><i class="fas fa-location-dot"></i> Find Branch / ATM</a>
+                    <a href="contact.html"><i class="fas fa-headset"></i> Contact Us</a>
+                    <a href="login.html" style="color: var(--rbc-gold); font-weight: 700;"><i class="fas fa-lock"></i> Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="rbc-main-nav">
+        <div class="rbc-container">
+            <div class="rbc-main-nav-inner">
+                <a href="index.html" class="rbc-brand">
+                    <div class="rbc-brand-crest"><i class="fas fa-shield-halved"></i></div>
+                    <div class="rbc-brand-text">
+                        <span class="rbc-brand-title">RBC Royal Bank</span>
+                        <span class="rbc-brand-tag">Branch &amp; ATM Locator</span>
+                    </div>
+                </a>
+                <div class="rbc-header-actions">
+                    <form class="rbc-search-form" action="help.html" method="get">
+                        <input type="text" name="q" class="rbc-search-input" placeholder="Search RBC...">
+                        <button type="submit" class="rbc-search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                    <a href="contact.html" class="rbc-header-contact"><i class="fas fa-phone"></i> 1-800-769-2511</a>
+                    <a href="login.html" class="rbc-btn-signin"><i class="fas fa-lock"></i> Sign In</a>
+                    <button class="rbc-mobile-toggle" id="rbcMobileToggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SUBNAV -->
+    <nav class="rbc-subnav">
+        <div class="rbc-container">
+            <ul class="rbc-subnav-list" id="rbcSubnavList">
+                <li class="rbc-subnav-item"><a href="accounts.html" class="rbc-subnav-link">Accounts</a></li>
+                <li class="rbc-subnav-item"><a href="credit-cards.html" class="rbc-subnav-link">Credit Cards</a></li>
+                <li class="rbc-subnav-item"><a href="mortgages.html" class="rbc-subnav-link">Mortgages</a></li>
+                <li class="rbc-subnav-item"><a href="loans.html" class="rbc-subnav-link">Loans</a></li>
+                <li class="rbc-subnav-item"><a href="investments.html" class="rbc-subnav-link">Investments</a></li>
+                <li class="rbc-subnav-item"><a href="rewards.html" class="rbc-subnav-link">Rewards</a></li>
+                <li class="rbc-subnav-item"><a href="advice.html" class="rbc-subnav-link">Advice</a></li>
+                <li class="rbc-subnav-item"><a href="calculators.html" class="rbc-subnav-link">Calculators</a></li>
+                <li class="rbc-subnav-item"><a href="digital-banking.html" class="rbc-subnav-link">Digital Banking</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SEARCH & MAP HERO -->
+    <section class="rbc-section" style="background: #ffffff; border-bottom: 1px solid var(--rbc-border);">
+        <div class="rbc-container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 style="font-size: 2.4rem; font-weight: 800; color: var(--rbc-navy); margin-bottom: 12px;">
+                    Branch &amp; ATM Locator
+                </h1>
+                <p style="font-size: 1.05rem; color: var(--rbc-text-secondary); margin-bottom: 24px;">
+                    Find any of our 1,200+ full-service branches, 24-hour drive-thru ATMs, and commercial financial centres.
+                </p>
+
+                <form class="rbc-locator-form" style="margin-bottom: 20px;" onsubmit="event.preventDefault();">
+                    <input type="text" class="rbc-input" placeholder="Enter city, postal code, street address, or transit #">
+                    <button type="submit" class="rbc-btn-primary" style="white-space: nowrap;">Search Nearby</button>
+                </form>
+
+                <!-- Filter Chips -->
+                <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+                    <span style="background: var(--rbc-bg); border: 1px solid var(--rbc-border); padding: 6px 14px; border-radius: var(--rbc-radius-full); font-size: 0.82rem; font-weight: 600; cursor: pointer; color: var(--rbc-navy);">
+                        <i class="fas fa-clock" style="color: var(--rbc-blue);"></i> Open Now
+                    </span>
+                    <span style="background: var(--rbc-bg); border: 1px solid var(--rbc-border); padding: 6px 14px; border-radius: var(--rbc-radius-full); font-size: 0.82rem; font-weight: 600; cursor: pointer; color: var(--rbc-navy);">
+                        <i class="fas fa-money-bill-transfer" style="color: var(--rbc-blue);"></i> 24/7 ATM Access
+                    </span>
+                    <span style="background: var(--rbc-bg); border: 1px solid var(--rbc-border); padding: 6px 14px; border-radius: var(--rbc-radius-full); font-size: 0.82rem; font-weight: 600; cursor: pointer; color: var(--rbc-navy);">
+                        <i class="fas fa-wheelchair" style="color: var(--rbc-blue);"></i> Wheelchair Accessible
+                    </span>
+                    <span style="background: var(--rbc-bg); border: 1px solid var(--rbc-border); padding: 6px 14px; border-radius: var(--rbc-radius-full); font-size: 0.82rem; font-weight: 600; cursor: pointer; color: var(--rbc-navy);">
+                        <i class="fas fa-user-tie" style="color: var(--rbc-blue);"></i> Financial Advisors on Site
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANCH LISTINGS GRID -->
+    <section class="rbc-section" style="background-color: var(--rbc-bg);">
+        <div class="rbc-container">
+            <h2 class="rbc-section-title" style="font-size: 1.6rem; text-align: left; margin-bottom: 24px;">Featured Downtown &amp; Regional Branches</h2>
+
+            <div class="rbc-ecosystem-grid">
+                <!-- Branch 1 -->
+                <div class="rbc-ecosystem-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                        <div>
+                            <span class="rbc-badge-pill" style="margin-bottom: 6px;">Main Corporate Branch</span>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rbc-navy);">Royal Bank Plaza</h3>
+                        </div>
+                        <span style="color: #16a34a; font-weight: 700; font-size: 0.82rem;"><i class="fas fa-circle" style="font-size: 0.6rem;"></i> Open Now</span>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--rbc-text-secondary); margin-bottom: 12px;">
+                        <i class="fas fa-location-dot" style="color: var(--rbc-blue);"></i> 200 Bay Street, South Tower, Financial District
+                    </p>
+                    <p style="font-size: 0.82rem; color: var(--rbc-text-muted); margin-bottom: 16px;">
+                        Transit #: <strong>00002</strong> | Institution #: <strong>003</strong><br>
+                        Mon - Fri: 9:00 AM - 5:00 PM | Sat: 9:30 AM - 3:00 PM
+                    </p>
+                    <div style="display: flex; gap: 10px; margin-top: auto;">
+                        <a href="contact.html" class="rbc-btn-primary" style="flex: 1; justify-content: center; font-size: 0.85rem; padding: 8px 12px;">Book Appointment</a>
+                        <a href="tel:18007692511" class="rbc-btn-secondary" style="font-size: 0.85rem; padding: 8px 12px;"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Branch 2 -->
+                <div class="rbc-ecosystem-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                        <div>
+                            <span class="rbc-badge-pill" style="margin-bottom: 6px; background: #e0f2fe; color: #0284c7; border-color: #bae6fd;">Drive-Thru ATM</span>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rbc-navy);">Commercial Centre North</h3>
+                        </div>
+                        <span style="color: #16a34a; font-weight: 700; font-size: 0.82rem;"><i class="fas fa-circle" style="font-size: 0.6rem;"></i> Open Now</span>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--rbc-text-secondary); margin-bottom: 12px;">
+                        <i class="fas fa-location-dot" style="color: var(--rbc-blue);"></i> 5100 Yonge Street, Suite 100
+                    </p>
+                    <p style="font-size: 0.82rem; color: var(--rbc-text-muted); margin-bottom: 16px;">
+                        Transit #: <strong>01422</strong> | Institution #: <strong>003</strong><br>
+                        Mon - Fri: 9:00 AM - 6:00 PM | Sat: 9:00 AM - 4:00 PM
+                    </p>
+                    <div style="display: flex; gap: 10px; margin-top: auto;">
+                        <a href="contact.html" class="rbc-btn-primary" style="flex: 1; justify-content: center; font-size: 0.85rem; padding: 8px 12px;">Book Appointment</a>
+                        <a href="tel:18007692511" class="rbc-btn-secondary" style="font-size: 0.85rem; padding: 8px 12px;"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Branch 3 -->
+                <div class="rbc-ecosystem-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                        <div>
+                            <span class="rbc-badge-pill" style="margin-bottom: 6px; background: #fef3c7; color: #b45309; border-color: #fde68a;">Wealth Advisory Centre</span>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rbc-navy);">West End Financial Hub</h3>
+                        </div>
+                        <span style="color: #16a34a; font-weight: 700; font-size: 0.82rem;"><i class="fas fa-circle" style="font-size: 0.6rem;"></i> Open Now</span>
+                    </div>
+                    <p style="font-size: 0.88rem; color: var(--rbc-text-secondary); margin-bottom: 12px;">
+                        <i class="fas fa-location-dot" style="color: var(--rbc-blue);"></i> 320 Bloor Street West, Annex
+                    </p>
+                    <p style="font-size: 0.82rem; color: var(--rbc-text-muted); margin-bottom: 16px;">
+                        Transit #: <strong>03881</strong> | Institution #: <strong>003</strong><br>
+                        Mon - Fri: 9:30 AM - 5:00 PM | Sat: 10:00 AM - 2:00 PM
+                    </p>
+                    <div style="display: flex; gap: 10px; margin-top: auto;">
+                        <a href="contact.html" class="rbc-btn-primary" style="flex: 1; justify-content: center; font-size: 0.85rem; padding: 8px 12px;">Book Appointment</a>
+                        <a href="tel:18007692511" class="rbc-btn-secondary" style="font-size: 0.85rem; padding: 8px 12px;"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEGA FOOTER -->
+    <footer class="rbc-footer">
+        <div class="rbc-container">
+            <div class="rbc-footer-grid">
+                <div class="rbc-footer-col">
+                    <h4>About RBC</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="about.html">About Our Bank</a></li>
+                        <li><a href="investors.html">Investor Relations</a></li>
+                        <li><a href="newsroom.html">Media Newsroom</a></li>
+                        <li><a href="careers.html">Careers at RBC</a></li>
+                    </ul>
+                </div>
+                <div class="rbc-footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="accounts.html">Apply Online</a></li>
+                        <li><a href="locations.html">Branch &amp; ATM Locator</a></li>
+                        <li><a href="help.html">Help Centre &amp; FAQs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="rbc-footer-col">
+                    <h4>Daily Numbers</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="rates.html">Foreign Exchange Rates</a></li>
+                        <li><a href="mortgages.html">Mortgage Rates</a></li>
+                        <li><a href="calculators.html">Financial Calculators</a></li>
+                    </ul>
+                </div>
+                <div class="rbc-footer-col">
+                    <h4>Protecting Your Money</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="security.html">100% Security Guarantee</a></li>
+                        <li><a href="security.html">Report Suspicious Activity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rbc-footer-bottom">
+            <div class="rbc-container">
+                <div class="rbc-footer-bottom-inner">
+                    <div>Royal Bank of Canada Website, &copy; 1995-2026.</div>
+                    <ul class="rbc-legal-links">
+                        <li><a href="privacy.html">Privacy &amp; Security</a></li>
+                        <li><a href="terms.html">Legal Terms</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="temp/custom/assets/js/rbc-main.js"></script>
+</body>
+</html>

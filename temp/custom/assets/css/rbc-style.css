@@ -1,0 +1,1484 @@
+/* ==========================================================================
+   Royal Tier-1 Online Banking Design System (RBC Style)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --rbc-blue: #0051a5;
+    --rbc-blue-dark: #003da5;
+    --rbc-blue-light: #0073e6;
+    --rbc-navy: #002244;
+    --rbc-navy-dark: #00172e;
+    --rbc-gold: #fed100;
+    --rbc-gold-hover: #e6bd00;
+    --rbc-gold-dark: #cc9900;
+    --rbc-cyan: #00a3e0;
+    --rbc-teal: #00857c;
+    
+    --rbc-bg: #f4f7fb;
+    --rbc-surface: #ffffff;
+    --rbc-surface-alt: #f8fafc;
+    
+    --rbc-text-primary: #1e293b;
+    --rbc-text-secondary: #475569;
+    --rbc-text-muted: #64748b;
+    --rbc-text-light: #ffffff;
+    
+    --rbc-border: #e2e8f0;
+    --rbc-border-subtle: #edf2f7;
+    --rbc-border-strong: #cbd5e1;
+    
+    --rbc-shadow-sm: 0 1px 3px rgba(0, 34, 68, 0.06), 0 1px 2px rgba(0, 34, 68, 0.04);
+    --rbc-shadow-md: 0 4px 12px rgba(0, 34, 68, 0.08), 0 2px 4px rgba(0, 34, 68, 0.04);
+    --rbc-shadow-lg: 0 12px 24px rgba(0, 34, 68, 0.1), 0 4px 8px rgba(0, 34, 68, 0.06);
+    --rbc-shadow-xl: 0 20px 35px rgba(0, 34, 68, 0.12), 0 8px 16px rgba(0, 34, 68, 0.08);
+    
+    --rbc-radius-sm: 6px;
+    --rbc-radius-md: 10px;
+    --rbc-radius-lg: 16px;
+    --rbc-radius-full: 9999px;
+    
+    --font-main: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--rbc-text-primary);
+    background-color: var(--rbc-bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--rbc-blue);
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: var(--rbc-blue-dark);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   CONTAINER & LAYOUT
+   ========================================================================== */
+.rbc-container {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rbc-section {
+    padding: 60px 0;
+}
+
+.rbc-section-sm {
+    padding: 40px 0;
+}
+
+.rbc-section-lg {
+    padding: 80px 0;
+}
+
+.rbc-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.rbc-section-subtitle {
+    font-size: 1.05rem;
+    color: var(--rbc-text-secondary);
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 40px auto;
+}
+
+/* ==========================================================================
+   TOP SEGMENT BAR
+   ========================================================================== */
+.rbc-topbar {
+    background-color: #001f3f;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.82rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rbc-topbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+}
+
+.rbc-segment-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4px;
+    height: 100%;
+}
+
+.rbc-segment-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0 14px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.rbc-segment-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.rbc-segment-link.active {
+    color: #ffffff;
+    background-color: var(--rbc-blue);
+    border-bottom-color: var(--rbc-gold);
+    font-weight: 700;
+}
+
+.rbc-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.rbc-topbar-right a {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.82rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rbc-topbar-right a:hover {
+    color: var(--rbc-gold);
+}
+
+/* ==========================================================================
+   MAIN BRAND HEADER
+   ========================================================================== */
+.rbc-main-nav {
+    background-color: var(--rbc-blue);
+    color: #ffffff;
+    padding: 14px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 100;
+}
+
+.rbc-main-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rbc-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.rbc-logo-img {
+    max-height: 48px;
+    max-width: 240px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.rbc-brand-crest {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #fed100 0%, #f5a800 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rbc-navy);
+    font-size: 1.4rem;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.rbc-brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.rbc-brand-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.rbc-brand-tag {
+    font-size: 0.72rem;
+    color: var(--rbc-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.rbc-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Search bar */
+.rbc-search-form {
+    position: relative;
+    width: 280px;
+}
+
+.rbc-search-input {
+    width: 100%;
+    height: 40px;
+    padding: 0 40px 0 16px;
+    border-radius: var(--rbc-radius-full);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.rbc-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.rbc-search-input:focus {
+    background: #ffffff;
+    color: var(--rbc-text-primary);
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(254, 209, 0, 0.4);
+}
+
+.rbc-search-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.rbc-search-input:focus + .rbc-search-btn {
+    color: var(--rbc-blue);
+}
+
+.rbc-header-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--rbc-radius-sm);
+    transition: background-color 0.2s ease;
+}
+
+.rbc-header-contact:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+.rbc-btn-signin {
+    background-color: var(--rbc-gold);
+    color: var(--rbc-navy);
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 9px 22px;
+    border-radius: var(--rbc-radius-full);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.rbc-btn-signin:hover {
+    background-color: var(--rbc-gold-hover);
+    color: var(--rbc-navy-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rbc-mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+/* ==========================================================================
+   PRODUCT SUBNAV
+   ========================================================================== */
+.rbc-subnav {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--rbc-border);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+.rbc-subnav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.rbc-subnav-list::-webkit-scrollbar {
+    display: none;
+}
+
+.rbc-subnav-item {
+    position: relative;
+    white-space: nowrap;
+}
+
+.rbc-subnav-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 14px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--rbc-text-primary);
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.rbc-subnav-link:hover {
+    color: var(--rbc-blue);
+    background-color: #f8fafc;
+}
+
+.rbc-subnav-item.active .rbc-subnav-link,
+.rbc-subnav-link.active {
+    color: var(--rbc-blue);
+    border-bottom-color: var(--rbc-blue);
+    font-weight: 700;
+}
+
+/* Dropdown Menu */
+.rbc-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background: #ffffff;
+    border: 1px solid var(--rbc-border);
+    border-radius: 0 0 var(--rbc-radius-md) var(--rbc-radius-md);
+    box-shadow: var(--rbc-shadow-lg);
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+    z-index: 200;
+}
+
+.rbc-subnav-item:hover .rbc-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.rbc-dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 18px;
+    font-size: 0.88rem;
+    color: var(--rbc-text-primary);
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.rbc-dropdown-item:hover {
+    background-color: var(--rbc-bg);
+    color: var(--rbc-blue);
+    padding-left: 22px;
+}
+
+/* ==========================================================================
+   HERO SECTION (RBC STYLE)
+   ========================================================================== */
+.rbc-hero {
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0 40px 0;
+    border-bottom: 1px solid var(--rbc-border);
+}
+
+.rbc-hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.rbc-hero-content {
+    max-width: 580px;
+}
+
+.rbc-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fff4cc;
+    color: #8c6b00;
+    border: 1px solid #ffe680;
+    padding: 5px 14px;
+    border-radius: var(--rbc-radius-full);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 18px;
+}
+
+.rbc-hero-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--rbc-navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.rbc-hero-desc {
+    font-size: 1.25rem;
+    color: var(--rbc-text-secondary);
+    margin-bottom: 28px;
+    line-height: 1.45;
+}
+
+.rbc-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.rbc-btn-primary {
+    background-color: var(--rbc-blue);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 13px 28px;
+    border-radius: var(--rbc-radius-full);
+    border: 2px solid var(--rbc-blue);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 81, 165, 0.25);
+    text-decoration: none;
+}
+
+.rbc-btn-primary:hover {
+    background-color: var(--rbc-blue-dark);
+    border-color: var(--rbc-blue-dark);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 81, 165, 0.35);
+}
+
+.rbc-btn-secondary {
+    background-color: transparent;
+    color: var(--rbc-blue);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 13px 26px;
+    border-radius: var(--rbc-radius-full);
+    border: 2px solid var(--rbc-blue);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.rbc-btn-secondary:hover {
+    background-color: rgba(0, 81, 165, 0.08);
+    color: var(--rbc-blue-dark);
+}
+
+.rbc-hero-fineprint {
+    font-size: 0.78rem;
+    color: var(--rbc-text-muted);
+}
+
+.rbc-hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background Wave Curves */
+.rbc-wave-decor {
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 450px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.rbc-device-showcase {
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 20px 30px rgba(0, 34, 68, 0.15));
+    border-radius: 24px;
+}
+
+/* ==========================================================================
+   PROMO CAROUSEL CARDS
+   ========================================================================== */
+.rbc-promo-bar {
+    padding: 24px 0;
+    background: #ffffff;
+}
+
+.rbc-promo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.rbc-promo-card {
+    background: #ffffff;
+    border: 1px solid var(--rbc-border);
+    border-radius: var(--rbc-radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--rbc-shadow-sm);
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.rbc-promo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--rbc-shadow-md);
+    border-color: var(--rbc-blue);
+}
+
+.rbc-promo-card-thumb {
+    height: 120px;
+    background: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.rbc-promo-card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.rbc-promo-card:hover .rbc-promo-card-thumb img {
+    transform: scale(1.08);
+}
+
+.rbc-promo-card-body {
+    padding: 12px 14px;
+    background: #ffffff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.rbc-promo-card-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+    line-height: 1.3;
+}
+
+/* ==========================================================================
+   ECOSYSTEM 3-CARD GRID (RBC CORE)
+   ========================================================================== */
+.rbc-ecosystem-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.rbc-ecosystem-card {
+    background: #ffffff;
+    border: 1px solid var(--rbc-border);
+    border-radius: var(--rbc-radius-lg);
+    box-shadow: var(--rbc-shadow-md);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.rbc-ecosystem-card:hover {
+    box-shadow: var(--rbc-shadow-xl);
+    border-color: #cbd5e1;
+    transform: translateY(-4px);
+}
+
+.rbc-ecosystem-header {
+    border-bottom: 2px solid var(--rbc-border-subtle);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.rbc-ecosystem-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+}
+
+.rbc-ecosystem-body {
+    flex: 1;
+}
+
+/* Feature List Inside Ecosystem Card */
+.rbc-feature-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.rbc-feature-item a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--rbc-text-primary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 10px;
+    border-radius: var(--rbc-radius-sm);
+    transition: all 0.2s ease;
+}
+
+.rbc-feature-item a:hover {
+    color: var(--rbc-blue);
+    background-color: var(--rbc-bg);
+    transform: translateX(4px);
+}
+
+.rbc-feature-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgba(0, 81, 165, 0.08);
+    color: var(--rbc-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.rbc-ecosystem-footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rbc-border-subtle);
+}
+
+.rbc-link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--rbc-blue);
+}
+
+.rbc-link-arrow:hover {
+    color: var(--rbc-blue-dark);
+    gap: 12px;
+}
+
+/* Mobile App Promo Card */
+.rbc-app-showcase {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.rbc-app-icon-badge {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, #0051a5 0%, #002244 100%);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rbc-gold);
+    font-size: 2.2rem;
+    margin: 0 auto 16px auto;
+    box-shadow: 0 8px 20px rgba(0, 34, 68, 0.2);
+}
+
+/* ==========================================================================
+   "HOW CAN WE HELP YOU TODAY?" SECTION
+   ========================================================================== */
+.rbc-help-hub {
+    background-color: #ffffff;
+    border-top: 1px solid var(--rbc-border);
+    border-bottom: 1px solid var(--rbc-border);
+}
+
+.rbc-quick-tools-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.rbc-quick-tool-card {
+    background: var(--rbc-bg);
+    border: 1px solid var(--rbc-border);
+    border-radius: var(--rbc-radius-md);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: var(--rbc-text-primary);
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: all 0.2s ease;
+}
+
+.rbc-quick-tool-card:hover {
+    background: #ffffff;
+    border-color: var(--rbc-blue);
+    box-shadow: var(--rbc-shadow-md);
+    color: var(--rbc-blue);
+    transform: translateY(-2px);
+}
+
+.rbc-quick-tool-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: var(--rbc-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    flex-shrink: 0;
+}
+
+/* Category Accordion / Grid */
+.rbc-category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.rbc-category-accordion {
+    background: #ffffff;
+    border: 1px solid var(--rbc-border);
+    border-radius: var(--rbc-radius-md);
+    overflow: hidden;
+}
+
+.rbc-accordion-trigger {
+    width: 100%;
+    padding: 16px 20px;
+    background: #ffffff;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.2s ease;
+}
+
+.rbc-accordion-trigger:hover {
+    background-color: var(--rbc-bg);
+}
+
+.rbc-accordion-body {
+    padding: 0 20px 18px 20px;
+    color: var(--rbc-text-secondary);
+    font-size: 0.92rem;
+    display: none;
+}
+
+.rbc-category-accordion.active .rbc-accordion-body {
+    display: block;
+}
+
+/* "Did not find it?" Search Box */
+.rbc-help-search-box {
+    background: var(--rbc-bg);
+    border: 1px solid var(--rbc-border);
+    border-radius: var(--rbc-radius-md);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rbc-help-search-label {
+    font-weight: 700;
+    color: var(--rbc-navy);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.rbc-help-search-field {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.rbc-input {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid var(--rbc-border-strong);
+    border-radius: var(--rbc-radius-sm);
+    font-size: 0.92rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: inherit;
+}
+
+.rbc-input:focus {
+    border-color: var(--rbc-blue);
+    box-shadow: 0 0 0 3px rgba(0, 81, 165, 0.15);
+}
+
+/* ==========================================================================
+   "MY MONEY MATTERS" EDITORIAL SECTION
+   ========================================================================== */
+.rbc-article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.rbc-article-card {
+    background: #ffffff;
+    border: 1px solid var(--rbc-border);
+    border-radius: var(--rbc-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--rbc-shadow-sm);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.rbc-article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--rbc-shadow-lg);
+    border-color: var(--rbc-blue);
+}
+
+.rbc-article-thumb {
+    height: 190px;
+    background-color: #002244;
+    position: relative;
+    overflow: hidden;
+}
+
+.rbc-article-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.rbc-article-card:hover .rbc-article-thumb img {
+    transform: scale(1.05);
+}
+
+.rbc-article-body {
+    padding: 22px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rbc-article-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--rbc-blue);
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.rbc-article-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.rbc-article-snippet {
+    font-size: 0.88rem;
+    color: var(--rbc-text-secondary);
+    line-height: 1.5;
+    margin-top: auto;
+}
+
+/* ==========================================================================
+   AWARDS & RECOGNITION
+   ========================================================================== */
+.rbc-awards-section {
+    background-color: #ffffff;
+    border-top: 1px solid var(--rbc-border);
+    border-bottom: 1px solid var(--rbc-border);
+    padding: 40px 0;
+}
+
+.rbc-awards-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rbc-award-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 380px;
+}
+
+.rbc-award-icon {
+    font-size: 2.5rem;
+    color: var(--rbc-gold-dark);
+}
+
+.rbc-award-text h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+    margin-bottom: 4px;
+}
+
+.rbc-award-text p {
+    font-size: 0.82rem;
+    color: var(--rbc-text-muted);
+}
+
+/* ==========================================================================
+   ATM / BRANCH LOCATOR STRIP
+   ========================================================================== */
+.rbc-locator-banner {
+    background: linear-gradient(rgba(244, 247, 251, 0.92), rgba(244, 247, 251, 0.92)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 20 L100 20 M0 50 L100 50 M0 80 L100 80 M20 0 L20 100 M50 0 L50 100 M80 0 L80 100" stroke="%23cbd5e1" stroke-width="0.8" fill="none"/></svg>');
+    padding: 50px 0;
+    border-bottom: 1px solid var(--rbc-border);
+}
+
+.rbc-locator-box {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px 36px;
+    border-radius: var(--rbc-radius-lg);
+    box-shadow: var(--rbc-shadow-lg);
+    text-align: center;
+    border: 1px solid var(--rbc-border);
+}
+
+.rbc-locator-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--rbc-navy);
+    margin-bottom: 8px;
+}
+
+.rbc-locator-desc {
+    font-size: 0.92rem;
+    color: var(--rbc-text-secondary);
+    margin-bottom: 20px;
+}
+
+.rbc-locator-form {
+    display: flex;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   MEGA FOOTER (RBC STYLE)
+   ========================================================================== */
+.rbc-footer {
+    background-color: var(--rbc-navy);
+    color: #ffffff;
+    padding: 60px 0 0 0;
+}
+
+.rbc-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.rbc-footer-col h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.rbc-footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 3px;
+    background-color: var(--rbc-gold);
+    border-radius: 2px;
+}
+
+.rbc-footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rbc-footer-links a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.88rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.rbc-footer-links a:hover {
+    color: var(--rbc-gold);
+    transform: translateX(4px);
+}
+
+.rbc-cdic-badge {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--rbc-radius-md);
+    padding: 14px 18px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rbc-cdic-icon {
+    font-size: 1.8rem;
+    color: var(--rbc-gold);
+}
+
+.rbc-cdic-text {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.35;
+}
+
+.rbc-footer-bottom {
+    background-color: var(--rbc-navy-dark);
+    padding: 22px 0;
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.rbc-footer-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.rbc-legal-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.rbc-legal-links a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.82rem;
+}
+
+.rbc-legal-links a:hover {
+    color: #ffffff;
+}
+
+.rbc-social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.rbc-social-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.88rem;
+    transition: all 0.2s ease;
+}
+
+.rbc-social-btn:hover {
+    background-color: var(--rbc-gold);
+    color: var(--rbc-navy);
+}
+
+/* ==========================================================================
+   INTERACTIVE TOOLS / CALCULATORS / TABLES
+   ========================================================================== */
+.rbc-calc-card {
+    background: #ffffff;
+    border-radius: var(--rbc-radius-lg);
+    border: 1px solid var(--rbc-border);
+    box-shadow: var(--rbc-shadow-lg);
+    padding: 36px;
+    margin: 20px 0;
+}
+
+.rbc-calc-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 36px;
+}
+
+.rbc-form-group {
+    margin-bottom: 20px;
+}
+
+.rbc-form-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--rbc-navy);
+    margin-bottom: 6px;
+}
+
+.rbc-calc-result-box {
+    background: linear-gradient(135deg, #002752 0%, #0051a5 100%);
+    color: #ffffff;
+    border-radius: var(--rbc-radius-lg);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: var(--rbc-shadow-md);
+}
+
+.rbc-calc-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--rbc-gold);
+    margin: 10px 0;
+}
+
+/* Comparison Tables */
+.rbc-table-wrapper {
+    background: #ffffff;
+    border-radius: var(--rbc-radius-lg);
+    border: 1px solid var(--rbc-border);
+    overflow-x: auto;
+    box-shadow: var(--rbc-shadow-md);
+}
+
+.rbc-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.92rem;
+}
+
+.rbc-table th {
+    background-color: #002244;
+    color: #ffffff;
+    padding: 16px 20px;
+    font-weight: 700;
+}
+
+.rbc-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--rbc-border);
+    color: var(--rbc-text-primary);
+}
+
+.rbc-table tr:hover td {
+    background-color: var(--rbc-bg);
+}
+
+/* ==========================================================================
+   AUTH PAGES (LOGIN, REGISTER, RECOVERY)
+   ========================================================================== */
+.rbc-auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f7fb 0%, #e2e8f0 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.rbc-auth-container {
+    max-width: 480px;
+    margin: 40px auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.rbc-auth-card {
+    background: #ffffff;
+    border-radius: var(--rbc-radius-lg);
+    border: 1px solid var(--rbc-border);
+    box-shadow: var(--rbc-shadow-xl);
+    padding: 36px 32px;
+}
+
+.rbc-auth-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.rbc-auth-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.rbc-security-notice {
+    background-color: #ebf5ff;
+    border-left: 4px solid var(--rbc-blue);
+    padding: 12px 16px;
+    border-radius: 0 var(--rbc-radius-sm) var(--rbc-radius-sm) 0;
+    font-size: 0.82rem;
+    color: #003366;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .rbc-promo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .rbc-ecosystem-grid,
+    .rbc-article-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rbc-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rbc-quick-tools-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .rbc-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .rbc-hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .rbc-hero-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .rbc-topbar {
+        display: none;
+    }
+    
+    .rbc-header-contact {
+        display: none !important;
+    }
+    
+    .rbc-logo-img {
+        max-height: 38px;
+        max-width: 160px;
+    }
+    
+    .rbc-mobile-toggle {
+        display: block;
+    }
+    
+    .rbc-search-form {
+        display: none;
+    }
+    
+    .rbc-subnav-list {
+        display: none;
+    }
+    
+    .rbc-subnav-list.mobile-active {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background: #ffffff;
+        padding: 10px 0;
+    }
+    
+    .rbc-subnav-link {
+        padding: 12px 20px;
+        border-bottom: none;
+        border-left: 4px solid transparent;
+    }
+    
+    .rbc-subnav-item.active .rbc-subnav-link,
+    .rbc-subnav-link.active {
+        border-bottom: none;
+        border-left-color: var(--rbc-blue);
+        background-color: var(--rbc-bg);
+    }
+    
+    .rbc-dropdown {
+        position: static;
+        box-shadow: none;
+        border: none;
+        background-color: var(--rbc-bg);
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+    }
+    
+    .rbc-subnav-item.open .rbc-dropdown {
+        display: block;
+    }
+    
+    .rbc-hero-title {
+        font-size: 2rem;
+    }
+    
+    .rbc-promo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rbc-ecosystem-grid,
+    .rbc-article-grid,
+    .rbc-category-grid,
+    .rbc-calc-grid,
+    .rbc-quick-tools-bar,
+    .rbc-footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rbc-help-search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .rbc-locator-form {
+        flex-direction: column;
+    }
+    
+    .rbc-footer-bottom-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+}

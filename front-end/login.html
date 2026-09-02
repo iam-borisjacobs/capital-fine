@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In to Royal Bank Online Banking - RBC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="temp/custom/assets/css/rbc-style.css">
+</head>
+<body class="rbc-auth-page">
+
+    <!-- MINIMAL AUTH HEADER -->
+    <header style="background: var(--rbc-blue); padding: 16px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+        <div class="rbc-container">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="index.html" class="rbc-brand">
+                    <div class="rbc-brand-crest"><i class="fas fa-shield-halved"></i></div>
+                    <div class="rbc-brand-text">
+                        <span class="rbc-brand-title">RBC Royal Bank</span>
+                        <span class="rbc-brand-tag">Secure Sign In</span>
+                    </div>
+                </a>
+                <div style="font-size: 0.88rem; color: #ffffff;">
+                    <i class="fas fa-lock" style="color: var(--rbc-gold);"></i> 256-Bit SSL Encrypted
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- AUTH CARD CONTAINER -->
+    <main class="rbc-auth-container" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+        <div class="rbc-auth-card" style="width: 100%;">
+            <div class="rbc-auth-header">
+                <h1 style="font-size: 1.65rem; font-weight: 800; color: var(--rbc-navy); margin-bottom: 6px;">Sign In to Online Banking</h1>
+                <p style="font-size: 0.88rem; color: var(--rbc-text-muted);">Personal &amp; Small Business Accounts</p>
+            </div>
+
+            <!-- Security Notice -->
+            <div class="rbc-security-notice">
+                <i class="fas fa-shield-halved" style="font-size: 1.2rem; color: var(--rbc-blue); margin-top: 2px;"></i>
+                <div>
+                    <strong>Security Check:</strong> Never enter your password on any site other than the official Royal Bank URL. RBC will never ask for your PIN via SMS or email.
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <form action="index.html" method="get" onsubmit="event.preventDefault(); alert('Front-end simulation: Credentials received. In production, this posts to your auth route.'); window.location.href='index.html';">
+                <div class="rbc-form-group">
+                    <label class="rbc-form-label" for="clientCard">Client Card Number or Username</label>
+                    <div style="position: relative;">
+                        <input type="text" id="clientCard" class="rbc-input" placeholder="4519 •••• •••• ••••" required autocomplete="username" style="padding-left: 40px;">
+                        <i class="fas fa-credit-card" style="position: absolute; left: 14px; top: 13px; color: var(--rbc-text-muted);"></i>
+                    </div>
+                </div>
+
+                <div class="rbc-form-group">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                        <label class="rbc-form-label" for="clientPassword" style="margin-bottom: 0;">Password</label>
+                        <a href="forgot-password.html" style="font-size: 0.82rem; font-weight: 600;">Forgot Password?</a>
+                    </div>
+                    <div style="position: relative;">
+                        <input type="password" id="clientPassword" class="rbc-input" placeholder="Enter your password" required autocomplete="current-password" style="padding-left: 40px;">
+                        <i class="fas fa-key" style="position: absolute; left: 14px; top: 13px; color: var(--rbc-text-muted);"></i>
+                    </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px;">
+                    <input type="checkbox" id="rememberMe" style="width: 16px; height: 16px; accent-color: var(--rbc-blue);">
+                    <label for="rememberMe" style="font-size: 0.88rem; color: var(--rbc-text-secondary); cursor: pointer;">
+                        Remember my Client Card Number
+                    </label>
+                </div>
+
+                <button type="submit" class="rbc-btn-primary" style="width: 100%; justify-content: center; font-size: 1rem; padding: 13px;">
+                    <i class="fas fa-lock"></i> Sign In to Account
+                </button>
+            </form>
+
+            <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--rbc-border); text-align: center;">
+                <p style="font-size: 0.9rem; color: var(--rbc-text-secondary); margin-bottom: 12px;">New to RBC Online Banking?</p>
+                <a href="register.html" class="rbc-btn-secondary" style="width: 100%; justify-content: center;">
+                    Enroll / Activate Online Access
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- AUTH FOOTER -->
+    <footer style="background: var(--rbc-navy); color: rgba(255,255,255,0.7); font-size: 0.82rem; padding: 20px 0; text-align: center;">
+        <div class="rbc-container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <span>Royal Bank of Canada &copy; 1995-2026. Member of CDIC.</span>
+                <div style="display: flex; gap: 14px;">
+                    <a href="security.html" style="color: #fff;">100% Security Guarantee</a>
+                    <a href="privacy.html" style="color: #fff;">Privacy</a>
+                    <a href="terms.html" style="color: #fff;">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

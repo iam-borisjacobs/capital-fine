@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Royal Bank - Personal & Commercial Banking, Mortgages, Credit Cards, Investments and Loans.">
+    <title>Royal Bank - Personal & Commercial Banking, Mortgages, Investments</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="temp/custom/assets/css/rbc-style.css">
+</head>
+<body>
+
+    <!-- 1. TOP SEGMENT BAR -->
+    <div class="rbc-topbar">
+        <div class="rbc-container">
+            <div class="rbc-topbar-inner">
+                <ul class="rbc-segment-links">
+                    <li><a href="index.html" class="rbc-segment-link active">Personal</a></li>
+                    <li><a href="business.html" class="rbc-segment-link">Business</a></li>
+                    <li><a href="commercial.html" class="rbc-segment-link">Commercial</a></li>
+                    <li><a href="investments.html" class="rbc-segment-link">Wealth</a></li>
+                    <li><a href="about.html" class="rbc-segment-link">About RBC</a></li>
+                </ul>
+                <div class="rbc-topbar-right">
+                    <a href="rates.html"><i class="fas fa-chart-line"></i> Rates & FX</a>
+                    <a href="locations.html"><i class="fas fa-location-dot"></i> Find Branch / ATM</a>
+                    <a href="contact.html"><i class="fas fa-headset"></i> Contact Us</a>
+                    <a href="login.html" style="color: var(--rbc-gold); font-weight: 700;"><i class="fas fa-lock"></i> Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN BRAND HEADER -->
+    <header class="rbc-main-nav">
+        <div class="rbc-container">
+            <div class="rbc-main-nav-inner">
+                <a href="index.html" class="rbc-brand">
+                    <div class="rbc-brand-crest">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <div class="rbc-brand-text">
+                        <span class="rbc-brand-title">RBC Royal Bank</span>
+                        <span class="rbc-brand-tag">Online Banking</span>
+                    </div>
+                </a>
+
+                <div class="rbc-header-actions">
+                    <form class="rbc-search-form" action="help.html" method="get">
+                        <input type="text" name="q" class="rbc-search-input" placeholder="Search RBC...">
+                        <button type="submit" class="rbc-search-btn" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+
+                    <a href="contact.html" class="rbc-header-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>1-800-769-2511</span>
+                    </a>
+
+                    <a href="login.html" class="rbc-btn-signin">
+                        <i class="fas fa-lock"></i>
+                        <span>Sign In</span>
+                    </a>
+
+                    <button class="rbc-mobile-toggle" id="rbcMobileToggle" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. PRODUCT SUB-NAVIGATION -->
+    <nav class="rbc-subnav">
+        <div class="rbc-container">
+            <ul class="rbc-subnav-list" id="rbcSubnavList">
+                <li class="rbc-subnav-item active">
+                    <a href="accounts.html" class="rbc-subnav-link">
+                        Accounts <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </a>
+                    <div class="rbc-dropdown">
+                        <a href="accounts.html" class="rbc-dropdown-item">Chequing Accounts <i class="fas fa-arrow-right"></i></a>
+                        <a href="accounts.html" class="rbc-dropdown-item">Savings Accounts <i class="fas fa-arrow-right"></i></a>
+                        <a href="accounts.html" class="rbc-dropdown-item">Student & Youth Banking <i class="fas fa-arrow-right"></i></a>
+                        <a href="accounts.html" class="rbc-dropdown-item">Senior Banking <i class="fas fa-arrow-right"></i></a>
+                        <a href="accounts.html" class="rbc-dropdown-item">Compare All Accounts <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="credit-cards.html" class="rbc-subnav-link">
+                        Credit Cards <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </a>
+                    <div class="rbc-dropdown">
+                        <a href="credit-cards.html" class="rbc-dropdown-item">Cash Back Cards <i class="fas fa-arrow-right"></i></a>
+                        <a href="credit-cards.html" class="rbc-dropdown-item">Avion Travel Points <i class="fas fa-arrow-right"></i></a>
+                        <a href="credit-cards.html" class="rbc-dropdown-item">No Annual Fee Cards <i class="fas fa-arrow-right"></i></a>
+                        <a href="credit-cards.html" class="rbc-dropdown-item">Low Interest Cards <i class="fas fa-arrow-right"></i></a>
+                        <a href="credit-cards.html" class="rbc-dropdown-item">Card Selector Tool <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="mortgages.html" class="rbc-subnav-link">
+                        Mortgages <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </a>
+                    <div class="rbc-dropdown">
+                        <a href="mortgages.html" class="rbc-dropdown-item">Fixed Rate Mortgages <i class="fas fa-arrow-right"></i></a>
+                        <a href="mortgages.html" class="rbc-dropdown-item">Variable Rate Mortgages <i class="fas fa-arrow-right"></i></a>
+                        <a href="mortgages.html" class="rbc-dropdown-item">First-Time Home Buyers <i class="fas fa-arrow-right"></i></a>
+                        <a href="mortgages.html" class="rbc-dropdown-item">Mortgage Calculator <i class="fas fa-arrow-right"></i></a>
+                        <a href="mortgages.html" class="rbc-dropdown-item">Renew or Refinance <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="loans.html" class="rbc-subnav-link">
+                        Loans <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </a>
+                    <div class="rbc-dropdown">
+                        <a href="loans.html" class="rbc-dropdown-item">Personal Loans <i class="fas fa-arrow-right"></i></a>
+                        <a href="loans.html" class="rbc-dropdown-item">Lines of Credit <i class="fas fa-arrow-right"></i></a>
+                        <a href="loans.html" class="rbc-dropdown-item">Auto Financing <i class="fas fa-arrow-right"></i></a>
+                        <a href="loans.html" class="rbc-dropdown-item">Home Equity (HELOC) <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="investments.html" class="rbc-subnav-link">
+                        Investments <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                    </a>
+                    <div class="rbc-dropdown">
+                        <a href="investments.html" class="rbc-dropdown-item">GICs & Term Deposits <i class="fas fa-arrow-right"></i></a>
+                        <a href="investments.html" class="rbc-dropdown-item">Mutual Funds <i class="fas fa-arrow-right"></i></a>
+                        <a href="investments.html" class="rbc-dropdown-item">TFSA & RRSP <i class="fas fa-arrow-right"></i></a>
+                        <a href="investments.html" class="rbc-dropdown-item">Direct Investing <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="rewards.html" class="rbc-subnav-link">Rewards</a>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="advice.html" class="rbc-subnav-link">Advice</a>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="calculators.html" class="rbc-subnav-link">Calculators</a>
+                </li>
+                <li class="rbc-subnav-item">
+                    <a href="digital-banking.html" class="rbc-subnav-link">Digital Banking</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 4. HERO PROMOTIONAL BANNER -->
+    <section class="rbc-hero">
+        <div class="rbc-container">
+            <div class="rbc-hero-grid">
+                <div class="rbc-hero-content">
+                    <span class="rbc-badge-pill">
+                        <i class="fas fa-gift"></i> NEW CHEQUING ACCOUNT OFFER
+                    </span>
+                    <h1 class="rbc-hero-title">Open an eligible RBC Chequing Account and Get the New iPad</h1>
+                    <p class="rbc-hero-desc">Enjoy world-class digital banking, zero transfer fees with Interac e-Transfer, and your choice of premier rewards.</p>
+                    <div class="rbc-hero-actions">
+                        <a href="accounts.html" class="rbc-btn-primary">
+                            View Offer Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="register.html" class="rbc-btn-secondary">
+                            Open Account Online
+                        </a>
+                    </div>
+                    <p class="rbc-hero-fineprint"><i class="fas fa-info-circle"></i> Offer Ends November 2, 2026. Qualifying criteria and conditions apply.</p>
+                </div>
+
+                <div class="rbc-hero-visual">
+                    <svg class="rbc-wave-decor" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 300 C 150 150, 300 350, 480 100" stroke="#ffd200" stroke-width="12" stroke-linecap="round" fill="none"/>
+                        <path d="M20 350 C 120 200, 320 380, 500 160" stroke="#00a3e0" stroke-width="8" stroke-linecap="round" fill="none"/>
+                        <circle cx="380" cy="180" r="140" fill="#0051a5" fill-opacity="0.04"/>
+                    </svg>
+
+                    <!-- iPad & Banking App Mockup Graphic -->
+                    <div class="rbc-device-showcase" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); width: 340px; height: 240px; border-radius: 20px; border: 8px solid #334155; padding: 14px; color: #fff; box-shadow: var(--rbc-shadow-xl);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #334155; padding-bottom: 8px; margin-bottom: 12px;">
+                            <span style="font-weight: 700; font-size: 0.85rem; color: var(--rbc-gold);"><i class="fas fa-shield-halved"></i> RBC Mobile</span>
+                            <span style="font-size: 0.75rem; color: #94a3b8;">Welcome, John</span>
+                        </div>
+                        <div style="background: #1e293b; border-radius: 10px; padding: 12px; margin-bottom: 10px;">
+                            <div style="font-size: 0.75rem; color: #94a3b8;">RBC Advantage Chequing</div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #ffffff;">$14,850.25</div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <div style="flex: 1; background: #0051a5; border-radius: 8px; padding: 8px; text-align: center; font-size: 0.75rem; font-weight: 700;">
+                                <i class="fas fa-paper-plane"></i> Transfer
+                            </div>
+                            <div style="flex: 1; background: #334155; border-radius: 8px; padding: 8px; text-align: center; font-size: 0.75rem; font-weight: 700;">
+                                <i class="fas fa-file-invoice-dollar"></i> Pay Bills
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 5-CARD PROMOTIONAL CAROUSEL BAR -->
+    <section class="rbc-promo-bar">
+        <div class="rbc-container">
+            <div class="rbc-promo-grid">
+                <a href="accounts.html" class="rbc-promo-card">
+                    <div class="rbc-promo-card-thumb" style="background: linear-gradient(135deg, #0051a5, #002244);">
+                        <i class="fas fa-tablet-screen-button"></i>
+                    </div>
+                    <div class="rbc-promo-card-body">
+                        <span class="rbc-promo-card-title">Get the New iPad</span>
+                    </div>
+                </a>
+
+                <a href="investments.html" class="rbc-promo-card">
+                    <div class="rbc-promo-card-thumb" style="background: linear-gradient(135deg, #00857c, #004d40);">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="rbc-promo-card-body">
+                        <span class="rbc-promo-card-title">Get $100 when you invest</span>
+                    </div>
+                </a>
+
+                <a href="credit-cards.html" class="rbc-promo-card">
+                    <div class="rbc-promo-card-thumb" style="background: linear-gradient(135deg, #1e293b, #0f172a);">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="rbc-promo-card-body">
+                        <span class="rbc-promo-card-title">Get up to 70,000 Avion points</span>
+                    </div>
+                </a>
+
+                <a href="rewards.html" class="rbc-promo-card">
+                    <div class="rbc-promo-card-thumb" style="background: linear-gradient(135deg, #b91c1c, #7f1d1d);">
+                        <i class="fas fa-ticket"></i>
+                    </div>
+                    <div class="rbc-promo-card-body">
+                        <span class="rbc-promo-card-title">Get RBC Music tickets</span>
+                    </div>
+                </a>
+
+                <a href="investments.html" class="rbc-promo-card">
+                    <div class="rbc-promo-card-thumb" style="background: linear-gradient(135deg, #d97706, #92400e);">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="rbc-promo-card-body">
+                        <span class="rbc-promo-card-title">Start Investing today</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. WELCOME TO RBC PERSONAL BANKING (3-CARD ECOSYSTEM) -->
+    <section class="rbc-section" style="background-color: var(--rbc-bg);">
+        <div class="rbc-container">
+            <h2 class="rbc-section-title">Welcome to RBC Personal Banking</h2>
+            <p class="rbc-section-subtitle">Explore the personal banking products and services available from RBC Royal Bank to help you manage your finances, buy a home, invest and more.</p>
+
+            <div class="rbc-ecosystem-grid">
+                <!-- Card 1: Products & Services -->
+                <div class="rbc-ecosystem-card">
+                    <div class="rbc-ecosystem-header">
+                        <h3 class="rbc-ecosystem-title">RBC Products and Services</h3>
+                    </div>
+                    <div class="rbc-ecosystem-body">
+                        <ul class="rbc-feature-list">
+                            <li class="rbc-feature-item">
+                                <a href="mortgages.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-house"></i></div>
+                                    <span>Explore Mortgage Options</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="accounts.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-wallet"></i></div>
+                                    <span>Open a Bank Account</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="investments.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-chart-pie"></i></div>
+                                    <span>Personal Investing</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="loans.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-coins"></i></div>
+                                    <span>Loans & Lines of Credit</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="credit-cards.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-credit-card"></i></div>
+                                    <span>Find a Credit Card</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rbc-ecosystem-footer">
+                        <a href="accounts.html" class="rbc-link-arrow">View all products <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Customer Service -->
+                <div class="rbc-ecosystem-card">
+                    <div class="rbc-ecosystem-header">
+                        <h3 class="rbc-ecosystem-title">Customer Service</h3>
+                    </div>
+                    <div class="rbc-ecosystem-body">
+                        <p style="font-size: 0.88rem; color: var(--rbc-text-secondary); margin-bottom: 16px;">
+                            <strong>Chat with Us!</strong> Log in to the RBC Mobile App or Online Banking and chat with the NOMI Virtual Assistant for quick answers or to connect with an expert advisor.
+                        </p>
+                        <ul class="rbc-feature-list">
+                            <li class="rbc-feature-item">
+                                <a href="help.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-circle-question"></i></div>
+                                    <span>Help Centre & FAQs</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="locations.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-map-location-dot"></i></div>
+                                    <span>Find a Branch or ATM</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="contact.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-calendar-check"></i></div>
+                                    <span>Book an Appointment</span>
+                                </a>
+                            </li>
+                            <li class="rbc-feature-item">
+                                <a href="digital-banking.html">
+                                    <div class="rbc-feature-icon"><i class="fas fa-mobile-screen"></i></div>
+                                    <span>Benefits of Digital Banking</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rbc-ecosystem-footer">
+                        <a href="help.html" class="rbc-link-arrow">Visit Help Centre <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Discover Convenience -->
+                <div class="rbc-ecosystem-card">
+                    <div class="rbc-ecosystem-header">
+                        <h3 class="rbc-ecosystem-title">Discover Convenience</h3>
+                    </div>
+                    <div class="rbc-ecosystem-body">
+                        <div class="rbc-app-showcase">
+                            <div class="rbc-app-icon-badge">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--rbc-navy); margin-bottom: 8px;">The RBC Mobile App</h4>
+                            <p style="font-size: 0.9rem; color: var(--rbc-text-secondary); line-height: 1.5; margin-bottom: 18px;">
+                                Pay bills, send money with zero fees, deposit cheques securely from anywhere, and manage card limits right on your phone.
+                            </p>
+                            <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
+                                <span style="background: #e2e8f0; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; color: #334155;"><i class="fab fa-apple"></i> iOS App Store</span>
+                                <span style="background: #e2e8f0; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; color: #334155;"><i class="fab fa-google-play"></i> Google Play</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rbc-ecosystem-footer">
+                        <a href="digital-banking.html" class="rbc-link-arrow">Learn more about Mobile App <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. "HOW CAN WE HELP YOU TODAY?" SECTION -->
+    <section class="rbc-section rbc-help-hub">
+        <div class="rbc-container">
+            <h2 class="rbc-section-title">How can we help you today?</h2>
+
+            <!-- Quick Action 4-Card Strip -->
+            <div class="rbc-quick-tools-bar">
+                <a href="rates.html" class="rbc-quick-tool-card">
+                    <div class="rbc-quick-tool-icon"><i class="fas fa-percent"></i></div>
+                    <span>Today's Rates</span>
+                </a>
+                <a href="rates.html" class="rbc-quick-tool-card">
+                    <div class="rbc-quick-tool-icon"><i class="fas fa-arrow-right-arrow-left"></i></div>
+                    <span>Foreign Exchange</span>
+                </a>
+                <a href="mortgages.html" class="rbc-quick-tool-card">
+                    <div class="rbc-quick-tool-icon"><i class="fas fa-calculator"></i></div>
+                    <span>Calculate My Mortgage Payments</span>
+                </a>
+                <a href="investments.html" class="rbc-quick-tool-card">
+                    <div class="rbc-quick-tool-icon"><i class="fas fa-piggy-bank"></i></div>
+                    <span>Boost My Savings & RRSP</span>
+                </a>
+            </div>
+
+            <!-- Category Accordions -->
+            <div class="rbc-category-grid">
+                <div class="rbc-category-accordion">
+                    <button class="rbc-accordion-trigger">
+                        <span>Buying a Home</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="rbc-accordion-body">
+                        Discover step-by-step guidance for first-time buyers, get pre-approved in minutes, and lock in competitive fixed or variable mortgage rates.
+                        <div style="margin-top: 10px;"><a href="mortgages.html" class="rbc-link-arrow">Explore Home Buying Guide <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="rbc-category-accordion">
+                    <button class="rbc-accordion-trigger">
+                        <span>New to Canada</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="rbc-accordion-body">
+                        Start your journey with free banking for a year, no credit history required for your first credit card, and dedicated international transfer rates.
+                        <div style="margin-top: 10px;"><a href="accounts.html" class="rbc-link-arrow">Newcomer Banking Package <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="rbc-category-accordion">
+                    <button class="rbc-accordion-trigger">
+                        <span>Going to School</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="rbc-accordion-body">
+                        No monthly fee student bank accounts, student lines of credit with low prime rates, and cash back credit cards built for campus life.
+                        <div style="margin-top: 10px;"><a href="accounts.html" class="rbc-link-arrow">Student Banking Hub <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="rbc-category-accordion">
+                    <button class="rbc-accordion-trigger">
+                        <span>Retirement Planning</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="rbc-accordion-body">
+                        Maximize your RRSP and TFSA contributions with high-yield GICs and diversified mutual funds guided by our accredited financial planners.
+                        <div style="margin-top: 10px;"><a href="investments.html" class="rbc-link-arrow">Retirement Calculators & Plans <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="rbc-category-accordion">
+                    <button class="rbc-accordion-trigger">
+                        <span>Resources for Seniors</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="rbc-accordion-body">
+                        Special banking rebates, estate planning tools, power of attorney guides, and priority telephone support for clients age 65+.
+                        <div style="margin-top: 10px;"><a href="accounts.html" class="rbc-link-arrow">Senior Benefits <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="rbc-category-accordion">
+                    <button class="rbc-accordion-trigger">
+                        <span>Online & Mobile Banking Tutorials</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="rbc-accordion-body">
+                        Quick interactive guides on how to set up direct deposits, send an Interac e-Transfer, pay bills, and lock a lost credit card in seconds.
+                        <div style="margin-top: 10px;"><a href="digital-banking.html" class="rbc-link-arrow">Watch Video Tutorials <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- "Did not find it?" Search Box -->
+            <div class="rbc-help-search-box">
+                <span class="rbc-help-search-label">Did not find it?</span>
+                <form class="rbc-help-search-field" action="help.html" method="get">
+                    <input type="text" name="q" class="rbc-input" placeholder="Search topics, questions, or banking terms...">
+                    <button type="submit" class="rbc-btn-primary" style="padding: 10px 24px;">Find</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. "MY MONEY MATTERS" EDITORIAL SECTION -->
+    <section class="rbc-section" style="background-color: var(--rbc-bg);">
+        <div class="rbc-container">
+            <h2 class="rbc-section-title">My Money Matters</h2>
+            <p class="rbc-section-subtitle">My Money Matters brings articles and resources for you to take control of your financial wellbeing, build confidence, and reach your life goals.</p>
+
+            <div class="rbc-article-grid">
+                <!-- Article 1 -->
+                <a href="advice.html" class="rbc-article-card">
+                    <div class="rbc-article-thumb" style="background: linear-gradient(135deg, #002752, #0051a5); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 3rem;">
+                        <i class="fas fa-building-columns"></i>
+                    </div>
+                    <div class="rbc-article-body">
+                        <span class="rbc-article-tag">Mortgages & Rates</span>
+                        <h3 class="rbc-article-title">Central Bank Interest Rate Explained and How It Shapes Your Mortgage</h3>
+                        <p class="rbc-article-snippet">Understand how policy rate decisions directly impact fixed vs. variable payments, qualification stress tests, and future refinancing.</p>
+                    </div>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="advice.html" class="rbc-article-card">
+                    <div class="rbc-article-thumb" style="background: linear-gradient(135deg, #166534, #15803d); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 3rem;">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="rbc-article-body">
+                        <span class="rbc-article-tag">Business & Agriculture</span>
+                        <h3 class="rbc-article-title">3 Strategic Skills to Help Make You a Stronger Agri-Business Manager</h3>
+                        <p class="rbc-article-snippet">From hedging commodity volatility to managing equipment leasing, discover how top producers protect their working capital.</p>
+                    </div>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="advice.html" class="rbc-article-card">
+                    <div class="rbc-article-thumb" style="background: linear-gradient(135deg, #1e293b, #334155); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 3rem;">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="rbc-article-body">
+                        <span class="rbc-article-tag">Commercial Innovation</span>
+                        <h3 class="rbc-article-title">Rethinking an Industry Frozen in Time: How Canadian Entrepreneurs Scale</h3>
+                        <p class="rbc-article-snippet">How modern supply chain technology and RBC commercial trade lines helped Les Marchands build a premier nationwide brand.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="advice.html" class="rbc-btn-secondary">Discover More Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. AWARDS & RECOGNITION -->
+    <section class="rbc-awards-section">
+        <div class="rbc-container">
+            <div class="rbc-awards-grid">
+                <div style="font-size: 1.5rem; font-weight: 800; color: var(--rbc-navy); max-width: 200px;">
+                    RBC Awards &amp; Recognition
+                </div>
+
+                <div class="rbc-award-item">
+                    <div class="rbc-award-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="rbc-award-text">
+                        <h4>Financial Service Excellence Awards 2025</h4>
+                        <p><strong>by Ipsos</strong> — Recognized for Mobile Banking Excellence, Online Banking Excellence, and Financial Planning &amp; Advice.</p>
+                    </div>
+                </div>
+
+                <div class="rbc-award-item">
+                    <div class="rbc-award-icon"><i class="fas fa-award"></i></div>
+                    <div class="rbc-award-text">
+                        <h4>Best Bank in Canada 2026</h4>
+                        <p><strong>by Global Finance</strong> — Recognized as the Best Bank in Canada for the second consecutive year.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. BRANCH & ATM LOCATOR BANNER -->
+    <section class="rbc-locator-banner">
+        <div class="rbc-container">
+            <div class="rbc-locator-box">
+                <h3 class="rbc-locator-title">Find a Branch or ATM Near You</h3>
+                <p class="rbc-locator-desc">Access over 1,200 branches and 4,000 ATMs across the country with extended evening and weekend hours.</p>
+                <form class="rbc-locator-form" action="locations.html" method="get">
+                    <input type="text" name="location" class="rbc-input" placeholder="Search by address, city, postal code or transit number">
+                    <button type="submit" class="rbc-btn-primary" style="padding: 10px 26px;">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. MEGA FOOTER -->
+    <footer class="rbc-footer">
+        <div class="rbc-container">
+            <div class="rbc-footer-grid">
+                <!-- Column 1: About RBC -->
+                <div class="rbc-footer-col">
+                    <h4>About RBC</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="about.html"><i class="fas fa-angle-right"></i> About Our Bank</a></li>
+                        <li><a href="investors.html"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
+                        <li><a href="newsroom.html"><i class="fas fa-angle-right"></i> Media Newsroom</a></li>
+                        <li><a href="advice.html"><i class="fas fa-angle-right"></i> Economic Insights</a></li>
+                        <li><a href="careers.html"><i class="fas fa-angle-right"></i> Careers at RBC</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Customer Service -->
+                <div class="rbc-footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="accounts.html"><i class="fas fa-angle-right"></i> Apply Online</a></li>
+                        <li><a href="locations.html"><i class="fas fa-angle-right"></i> Branch &amp; ATM Locator</a></li>
+                        <li><a href="help.html"><i class="fas fa-angle-right"></i> Help Centre &amp; FAQs</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right"></i> Book an Appointment</a></li>
+                        <li><a href="contact.html"><i class="fas fa-phone"></i> 1-800-769-2511</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Daily Numbers -->
+                <div class="rbc-footer-col">
+                    <h4>Daily Numbers</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="rates.html"><i class="fas fa-angle-right"></i> Foreign Exchange Rates</a></li>
+                        <li><a href="rates.html"><i class="fas fa-angle-right"></i> Prime Lending Rate</a></li>
+                        <li><a href="mortgages.html"><i class="fas fa-angle-right"></i> Mortgage Rates</a></li>
+                        <li><a href="investments.html"><i class="fas fa-angle-right"></i> GIC &amp; Mutual Fund Rates</a></li>
+                        <li><a href="calculators.html"><i class="fas fa-angle-right"></i> Financial Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Protecting Your Money -->
+                <div class="rbc-footer-col">
+                    <h4>Protecting Your Money</h4>
+                    <ul class="rbc-footer-links">
+                        <li><a href="security.html"><i class="fas fa-shield-halved"></i> 100% Security Guarantee</a></li>
+                        <li><a href="security.html"><i class="fas fa-angle-right"></i> Cybersecurity Tips</a></li>
+                        <li><a href="security.html"><i class="fas fa-angle-right"></i> Report Suspicious Activity</a></li>
+                    </ul>
+                    <div class="rbc-cdic-badge">
+                        <div class="rbc-cdic-icon"><i class="fas fa-building-shield"></i></div>
+                        <div class="rbc-cdic-text">
+                            Royal Bank is a member of the Canada Deposit Insurance Corporation (CDIC).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rbc-footer-bottom">
+            <div class="rbc-container">
+                <div class="rbc-footer-bottom-inner">
+                    <div>
+                        Royal Bank of Canada Website, &copy; 1995-2026. All rights reserved.
+                    </div>
+                    <ul class="rbc-legal-links">
+                        <li><a href="privacy.html">Privacy &amp; Security</a></li>
+                        <li><a href="terms.html">Legal Terms</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                    </ul>
+                    <div class="rbc-social-icons">
+                        <a href="#" class="rbc-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="rbc-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="rbc-social-btn" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="rbc-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="rbc-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Engine -->
+    <script src="temp/custom/assets/js/rbc-main.js"></script>
+</body>
+</html>
