@@ -8,7 +8,7 @@
   <title>{{ $settings->site_name }} | @yield('title')</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Swift and Secure Money Transfer to any UK bank account will become a breeze with {{$settings->site_name}}." />
+  <meta name="description" content="Swift and secure global capital settlements and treasury solutions with {{$settings->site_name}}." />
   <meta name="csrf_token" content="{{ csrf_token() }}" id="csrf_token" data-turbolinks-permanent>
   <link rel="shortcut icon" href="{{ asset('storage/app/public/' . $settings->favicon) }}" />
   <link rel="stylesheet" href="{{ asset('dash2/libs/%40fortawesome/fontawesome-pro/css/all.min.css') }}">

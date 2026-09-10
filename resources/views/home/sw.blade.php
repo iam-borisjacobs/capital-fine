@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Not Found - Silveredgebank')
+@section('title', 'Not Found - ' . ($settings->site_name ?? 'Flutran Global'))
 
 @section('content')
 <div class="min-h-screen flex items-center justify-center p-4">
@@ -28,7 +28,7 @@
 
 				<!-- Action Button -->
 				<div class="pt-2">
-					<a href="http://www.silveredgeb.com/"
+					<a href="{{ route('home') }}"
 					   class="error-button inline-flex items-center justify-center space-x-2 px-6 py-3 rounded-xl font-semibold text-white text-sm group">
 						<i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"></i>
 						<span>Go Back</span>
@@ -37,13 +37,13 @@
 
 				<!-- Home Link -->
 				<p class="text-xs text-[#7A7A7A]">
-					or <a href="https://www.silveredgeb.com" class="text-primary-500 hover:text-primary-600 font-medium transition-colors">return to homepage</a>
+					or <a href="{{ route('home') }}" class="text-primary-500 hover:text-primary-600 font-medium transition-colors">return to homepage</a>
 				</p>
 			</div>
 
 			<!-- Footer -->
 			<p class="text-xs text-[#7A7A7A] text-center mt-6">
-				&copy; 2026 Silveredgebank. All rights reserved.
+				&copy; {{ date('Y') }} {{ $settings->site_name ?? 'Flutran Global' }}. All rights reserved.
 			</p>
 
 		</div>

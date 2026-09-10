@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Careers &amp; Life at Join Our Team')
+@section('title', 'Careers &amp; Opportunities')
 
 @section('content')
 <!-- HERO -->
@@ -8,7 +8,7 @@
         <div class="rbc-container">
             <div style="max-width: 720px; padding: 30px 0;">
                 <span class="rbc-badge-pill" style="background: rgba(254, 209, 0, 0.2); color: #fed100; border-color: rgba(254, 209, 0, 0.4);">
-                    <i class="fas fa-users"></i> JOIN ROYAL BANK
+                    <i class="fas fa-users"></i> JOIN OUR GLOBAL TEAM
                 </span>
                 <h1 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 16px; line-height: 1.15;">
                     Build a Meaningful Career at a Global Leader
@@ -28,7 +28,7 @@
     <section class="rbc-section" id="job-search" style="background-color: var(--rbc-bg);">
         <div class="rbc-container">
             <h2 class="rbc-section-title">Current Featured Opportunities</h2>
-            <p class="rbc-section-subtitle">Explore careers across technology, quantitative finance, retail banking, and risk intelligence.</p>
+            <p class="rbc-section-subtitle">Explore careers across technology, quantitative finance, private wealth, and risk intelligence.</p>
 
             <div style="display: flex; flex-direction: column; gap: 16px; max-width: 900px; margin: 0 auto;">
                 <!-- Job 1 -->
@@ -63,10 +63,10 @@
                 <div class="rbc-ecosystem-card" style="padding: 24px;">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;">
                         <div>
-                            <span class="rbc-badge-pill" style="margin-bottom: 6px; background: #dcfce7; color: #166534; border-color: #bbf7d0;">Retail Banking</span>
-                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rbc-navy);">Mortgage Development Specialist</h3>
+                            <span class="rbc-badge-pill" style="margin-bottom: 6px; background: #dcfce7; color: #166534; border-color: #bbf7d0;">Property &amp; Asset Finance</span>
+                            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rbc-navy);">Real Estate Portfolio Specialist</h3>
                             <p style="font-size: 0.88rem; color: var(--rbc-text-muted); margin-top: 4px;">
-                                <i class="fas fa-location-dot"></i> Montreal, QC | Full-Time | Job ID: #MORT-1142
+                                <i class="fas fa-location-dot"></i> Montreal, QC | Full-Time | Job ID: #PROP-1142
                             </p>
                         </div>
                         <a href={{ route('contact') }} class="rbc-btn-primary" style="font-size: 0.88rem; padding: 9px 20px;">Apply Now</a>

@@ -6,7 +6,7 @@
 @endphp
 @extends('layouts.base')
 @inject('content', 'App\Http\Controllers\FrontController')
-@section('title', 'About Us')
+@section('title', 'Private &amp; Personal Capital Solutions')
 
 
 @section('content')
@@ -16,10 +16,10 @@
 <div class="container">
 <div class="breadcrumb-title">
 <br><br>
-<h2>Personal Banking</h2>
+<h2>Private Capital Solutions</h2>
 <ul class="breadcrumb-menu list-style">
 <li><a href="/">Home </a></li>
-<li>Personal Banking</li>
+<li>Private Capital Solutions</li>
 </ul>
 </div>
 </div>
@@ -32,7 +32,7 @@
 <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
 <div class="section-title style1 text-center mb-40">
 <span style="text-transform: uppercase;">{{$settings->site_name}}</span>
-<h4>Personal Checking, Savings, Credit Cards, Loans That Works For You.</h4>
+<h4>Tailored Operating Accounts, High-Yield Reserves, Smart Cards, and Structured Financing.</h4>
 </div>
 </div>
 </div>
@@ -41,13 +41,13 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="single-terms">
-			<h3>Our Personal Banking</h3>
-			<p>We offer personal banking products that typically include savings and transaction facilities such as a bank transaction account, debit cards/EFT, an interest bearing floating account (savings account) and a fixed interest deposit account for a specific agreed period (certificates of deposit / term deposit) which can vary according to the bank.</p>
+			<h3>Private Financial &amp; Capital Solutions</h3>
+			<p>We offer private capital solutions that include operating liquidity reserves, global smart cards, high-yield floating accounts, and fixed-term deposit certificates designed to protect and compound your wealth.</p>
 			<ul class="content-feature-list list-style">
-			<li><i class="ri-checkbox-multiple-line"></i>To meet your banking needs, you'll need a combination of current and savings accounts.</li>
-			<li><i class="ri-checkbox-multiple-line"></i>Complementary accounts that work together to meet the demands of each individual's cash portfolio.</li>
-			<li><i class="ri-checkbox-multiple-line"></i>Instant access to cash, free day-to-day transactions, and fee-free currency conversion are just a few of the benefits – visit individual account sites for more information.</li>
-			<li><i class="ri-checkbox-multiple-line"></i>Except for the Cash Hub Account, which can only have two joint account holders, other personal accounts can have up to four joint account holders.</li>
+			<li><i class="ri-checkbox-multiple-line"></i>Comprehensive capital management combining operational liquidity and high-yield reserve facilities.</li>
+			<li><i class="ri-checkbox-multiple-line"></i>Complementary facilities engineered to optimize liquidity flow across your global asset portfolio.</li>
+			<li><i class="ri-checkbox-multiple-line"></i>Real-time liquidity access, zero-friction settlements, and institutional FX rates across multi-currency accounts.</li>
+			<li><i class="ri-checkbox-multiple-line"></i>Flexible joint ownership structures with multi-party authorization options for family offices and shared accounts.</li>
 			
 			</ul>
 			</div>
@@ -64,7 +64,7 @@
 <span>
 <i class="ri-apple-fill"></i>
 </span>
-<h3><a href="register">Apple ios</a></h3>
+<h3><a href="register">Apple iOS</a></h3>
 </div>
 <p></p>
 </div>
@@ -143,8 +143,7 @@
 <div class="content-title style1">
 <span>OUR APP</span>
 <h2>Let's Answer Some Of Your Questions Or Download Our App</h2>
-<p>Our digital banking platform is up to date and completely trustworthy.
-You can use your mobile to perform transactions, loan requests, and credit card transactions.</p>
+<p>Our digital capital platform provides institutional-grade security. Execute settlements, structured financing requests, and card management directly from your mobile device.</p>
 </div>
 <h5>Over 9.2 million Downloads Worldwide</h5>
 <div class="app-btn-wrap">

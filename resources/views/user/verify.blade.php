@@ -44,7 +44,7 @@
                                 <div class="ml-3">
                                     <h3 class="text-lg font-medium text-yellow-800">Account Under Review</h3>
                                     <div class="mt-2 text-yellow-700">
-                                        <p>Hi {{Auth::user()->name}} {{Auth::user()->lastname}}, your {{$settings->site_name}} internet banking account is currently Under Review. Our team is reviewing your information, and this process typically takes 24-48 hours.</p>
+                                        <p>Hi {{Auth::user()->name}} {{Auth::user()->lastname}}, your {{$settings->site_name}} client account is currently Under Review. Our team is reviewing your information, and this process typically takes 24-48 hours.</p>
                                         <p class="mt-2">If you have any questions, please contact our customer care team for assistance.</p>
                                     </div>
                                 </div>
@@ -89,7 +89,7 @@
                         <div class="prose prose-sm max-w-none text-gray-600 mb-4">
                             <p class="mb-2"><strong>Dear {{Auth::user()->name}} {{Auth::user()->lastname}} {{Auth::user()->middlename}},</strong></p>
                             
-                            <p>Welcome Onboard! {{$settings->site_name}} is the market's most innovative and fastest-growing company in the financial industry. We look forward to working with you to help you get the most out of our financial services and realize your banking goals.</p>
+                            <p>Welcome Onboard! {{$settings->site_name}} is the market's most innovative and fastest-growing platform in the financial industry. We look forward to working with you to help you get the most out of our financial services and realize your financial and capital goals.</p>
                             
                             <p>Here at {{$settings->site_name}}, we are committed to providing a wide variety of savings, investment, and loan products, all designed to meet your specific needs. Our services are being used by over two million customers around the world.</p>
                             

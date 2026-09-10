@@ -45,8 +45,8 @@
                     <div class="bg-white/20 backdrop-blur-sm p-4 rounded-full mb-4">
                         <i data-lucide="send" class="h-10 w-10 text-white"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-white">Local Bank Transfer</h2>
-                    <p class="text-white/80 mt-1 text-center">Send money to any local bank account securely</p>
+                    <h2 class="text-2xl font-bold text-white">Domestic Transfer</h2>
+                    <p class="text-white/80 mt-1 text-center">Send funds to any domestic account securely</p>
                 </div>
                 
                 <!-- Wave decoration at the bottom -->
@@ -167,24 +167,24 @@
                             </div>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
-                                <!-- Bank Name -->
+                                <!-- Financial Institution / Bank Name -->
                                 <div>
-                                    <label for="bankname" class="block text-sm font-medium text-gray-700 mb-1">Bank Name</label>
-                                    <div class="relative">
-                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                            <i data-lucide="building" class="h-5 w-5 text-gray-400"></i>
-                                        </div>
-                                        <input 
-                                            type="text" 
-                                            name="bankname" 
-                                            id="bankname" 
-                                            x-model="bankname"
-                                            class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
-                                            placeholder="Enter bank name"
-                                            required
-                                        />
-                                    </div>
-                                </div>
+                                     <label for="bankname" class="block text-sm font-medium text-gray-700 mb-1">Financial Institution / Bank</label>
+                                     <div class="relative">
+                                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                             <i data-lucide="building" class="h-5 w-5 text-gray-400"></i>
+                                         </div>
+                                         <input 
+                                             type="text" 
+                                             name="bankname" 
+                                             id="bankname" 
+                                             x-model="bankname"
+                                             class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
+                                             placeholder="Enter institution or bank name"
+                                             required
+                                         />
+                                     </div>
+                                 </div>
                                 
                                 <!-- Account Type -->
                                 <div>
@@ -418,7 +418,7 @@
                             </div>
                             
                             <div class="flex justify-between">
-                                <span class="text-gray-500">Bank</span>
+                                <span class="text-gray-500">Financial Institution</span>
                                 <span class="font-medium text-gray-900" x-text="bankname"></span>
                             </div>
                             

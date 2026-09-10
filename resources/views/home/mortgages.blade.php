@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Mortgages & Home Financing')
+@section('title', 'Property Solutions & Real Estate Financing')
 
 @section('content')
     <!-- HERO -->
@@ -9,13 +9,13 @@
         <div class="rbc-container" style="position: relative; z-index: 2;">
             <div style="max-width: 720px; padding: 40px 0;">
                 <span class="rbc-badge-pill" style="background: rgba(254, 209, 0, 0.2); color: #fed100; border-color: rgba(254, 209, 0, 0.4);">
-                    <i class="fas fa-house"></i> MORTGAGE SOLUTIONS
+                    <i class="fas fa-house"></i> PROPERTY FINANCING SOLUTIONS
                 </span>
                 <h1 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 16px; line-height: 1.15;">
-                    Get Your Mortgage Pre-Approved with Guaranteed Rates
+                    Get Your Property Financing Pre-Approved with Guaranteed Rates
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
-                    Lock in your rate for up to 120 days. Whether you are buying your first home, renewing, or refinancing, our mortgage specialists are here to guide you.
+                    Lock in your rate for up to 120 days. Whether you are acquiring your first real estate asset, restructuring, or refinancing, our specialists are here to guide you.
                 </p>
                 <div style="display: flex; gap: 14px; flex-wrap: wrap;">
                     <a href="{{ route('contact') }}" class="rbc-btn-signin" style="padding: 12px 28px; font-size: 1rem;">Get Pre-Approved Online <i class="fas fa-arrow-right"></i></a>
@@ -25,10 +25,10 @@
         </div>
     </section>
 
-    <!-- MORTGAGE RATES CARDS -->
+    <!-- PROPERTY RATES CARDS -->
     <section class="rbc-section" style="background-color: var(--rbc-bg);">
         <div class="rbc-container">
-            <h2 class="rbc-section-title">Special Featured Mortgage Rates</h2>
+            <h2 class="rbc-section-title">Special Featured Property Rates</h2>
             <p class="rbc-section-subtitle">Lock in competitive rates with flexible prepayment options and payment frequency choices.</p>
 
             <div class="rbc-ecosystem-grid">
@@ -42,7 +42,7 @@
                     <ul class="rbc-feature-list" style="margin-bottom: 24px;">
                         <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Predictable monthly payments guaranteed for 5 full years</li>
                         <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Prepay up to 10% of original principal each year</li>
-                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Rate guarantee held for 120 days during your home search</li>
+                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Rate guarantee held for 120 days during your property search</li>
                     </ul>
                     <a href="{{ route('contact') }}" class="rbc-btn-primary" style="width: 100%; justify-content: center;">Apply for 5-Year Fixed</a>
                 </div>
@@ -57,24 +57,24 @@
                     <ul class="rbc-feature-list" style="margin-bottom: 24px;">
                         <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Benefit immediately when prime interest rates decrease</li>
                         <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Convert to a fixed rate anytime without prepayment penalties</li>
-                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Double-up payments option to pay down mortgage faster</li>
+                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Flexible accelerated payment options to pay down balances faster</li>
                     </ul>
                     <a href="{{ route('contact') }}" class="rbc-btn-primary" style="width: 100%; justify-content: center;">Apply for 5-Year Variable</a>
                 </div>
 
                 <!-- First Time Buyer -->
                 <div class="rbc-ecosystem-card">
-                    <span class="rbc-badge-pill" style="align-self: flex-start; margin-bottom: 8px; background: #fef3c7; color: #92400e; border-color: #fde68a;">First-Time Home Buyers</span>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--rbc-navy);">First Home Advantage</h3>
+                    <span class="rbc-badge-pill" style="align-self: flex-start; margin-bottom: 8px; background: #fef3c7; color: #92400e; border-color: #fde68a;">First-Time Property Buyers</span>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--rbc-navy);">First Property Advantage</h3>
                     <div style="font-size: 2.8rem; font-weight: 800; color: var(--rbc-blue); margin: 12px 0;">
                         4.39% <span style="font-size: 0.95rem; font-weight: 500; color: var(--rbc-text-muted);">Special Rate</span>
                     </div>
                     <ul class="rbc-feature-list" style="margin-bottom: 24px;">
-                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Down payment options starting as low as 5%</li>
-                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> First-Time Home Buyer Incentive and Tax-Free FHSA integration</li>
-                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Free dedicated consultation with an accredited mortgage specialist</li>
+                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Capital funding options starting as low as 5%</li>
+                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Buyer Incentive and Tax-Advantaged FHSA integration</li>
+                        <li style="display: flex; gap: 10px; font-size: 0.88rem;"><i class="fas fa-check-circle" style="color: #16a34a; margin-top: 3px;"></i> Free dedicated consultation with an accredited real estate specialist</li>
                     </ul>
-                    <a href="{{ route('contact') }}" class="rbc-btn-primary" style="width: 100%; justify-content: center;">Explore First-Home Package</a>
+                    <a href="{{ route('contact') }}" class="rbc-btn-primary" style="width: 100%; justify-content: center;">Explore Property Package</a>
                 </div>
             </div>
         </div>
@@ -89,11 +89,11 @@
                 </div>
                 <div>
                     <span class="rbc-badge-pill"><i class="fas fa-key"></i> FAST PRE-APPROVAL</span>
-                    <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">Shop with Complete Confidence</h2>
+                    <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">Acquire with Complete Confidence</h2>
                     <p style="color: var(--rbc-text-secondary); line-height: 1.6; margin-bottom: 20px;">
-                        Knowing your pre-approved budget gives you powerful bargaining leverage when making an offer. Our digital pre-approval process takes under 15 minutes with no obligation.
+                        Knowing your pre-approved financing capacity gives you powerful bargaining leverage when making an offer. Our digital pre-approval process takes under 15 minutes with no obligation.
                     </p>
-                    <a href="{{ route('contact') }}" class="rbc-btn-primary">Start Mortgage Pre-Approval Now</a>
+                    <a href="{{ route('contact') }}" class="rbc-btn-primary">Start Property Pre-Approval Now</a>
                 </div>
             </div>
         </div>

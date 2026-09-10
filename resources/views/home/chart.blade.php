@@ -36,8 +36,8 @@
                     <thead style="background: #f1f5f9; border-bottom: 2px solid var(--rbc-border);">
                         <tr>
                             <th style="padding: 16px 20px; font-weight: 700; color: var(--rbc-navy);">Currency Pair</th>
-                            <th style="padding: 16px 20px; font-weight: 700; color: var(--rbc-navy);">Bank Buys</th>
-                            <th style="padding: 16px 20px; font-weight: 700; color: var(--rbc-navy);">Bank Sells</th>
+                            <th style="padding: 16px 20px; font-weight: 700; color: var(--rbc-navy);">Platform Buys</th>
+                            <th style="padding: 16px 20px; font-weight: 700; color: var(--rbc-navy);">Platform Sells</th>
                             <th style="padding: 16px 20px; font-weight: 700; color: var(--rbc-navy);">24h Trend</th>
                         </tr>
                     </thead>

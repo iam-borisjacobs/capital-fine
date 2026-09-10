@@ -14,7 +14,7 @@
                     Latest News, Innovation &amp; Economic Research
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9);">
-                    Stay up to date with executive announcements, community grants, sustainable financing milestones, and macroeconomic reports.
+                    Stay up to date with executive announcements, community initiatives, sustainable financing milestones, and macroeconomic reports.
                 </p>
             </div>
         </div>
@@ -31,8 +31,8 @@
                     </div>
                     <div class="rbc-article-body">
                         <span class="rbc-article-tag">Press Release</span>
-                        <h3 class="rbc-article-title">Royal Bank of Canada Reports Record Third Quarter 2026 Net Income</h3>
-                        <p class="rbc-article-snippet">Strong performance driven by robust volume growth in Canadian Banking, elevated client trading in Capital Markets, and disciplined cost control.</p>
+                        <h3 class="rbc-article-title">{{ $settings->site_name ?? 'Flutran Global' }} Reports Record Third Quarter 2026 Net Income</h3>
+                        <p class="rbc-article-snippet">Strong performance driven by robust volume growth in Digital Capital, elevated client trading in Global Markets, and disciplined cost control.</p>
                     </div>
                 </div>
 
@@ -43,8 +43,8 @@
                     </div>
                     <div class="rbc-article-body">
                         <span class="rbc-article-tag">Community &amp; Climate</span>
-                        <h3 class="rbc-article-title">RBC Commits Additional $100 Million to Green Clean-Tech Innovations</h3>
-                        <p class="rbc-article-snippet">Expanding venture capital investments in carbon capture, hydrogen power, and grid modernization projects across Canada and North America.</p>
+                        <h3 class="rbc-article-title">{{ $settings->site_name ?? 'Flutran Global' }} Commits Additional $100 Million to Green Clean-Tech Innovations</h3>
+                        <p class="rbc-article-snippet">Expanding venture capital investments in carbon capture, hydrogen power, and grid modernization projects globally.</p>
                     </div>
                 </div>
 
@@ -55,8 +55,8 @@
                     </div>
                     <div class="rbc-article-body">
                         <span class="rbc-article-tag">Recognition</span>
-                        <h3 class="rbc-article-title">RBC Named Best Bank in Canada for Second Consecutive Year by Global Finance</h3>
-                        <p class="rbc-article-snippet">Evaluation commended RBC for digital banking client experience, wealth management advisory depth, and balance sheet resilience.</p>
+                        <h3 class="rbc-article-title">{{ $settings->site_name ?? 'Flutran Global' }} Named Best Financial Platform for Second Consecutive Year</h3>
+                        <p class="rbc-article-snippet">Evaluation commended {{ $settings->site_name ?? 'Flutran Global' }} for digital platform client experience, wealth management advisory depth, and balance sheet resilience.</p>
                     </div>
                 </div>
             </div>

@@ -15,7 +15,7 @@
                     We are Here to Help You Navigate Every Financial Milestone
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
-                    Whether you have questions about everyday accounts, international wire transfers, or need private wealth consultation, our team is ready.
+                    Whether you have questions about operating accounts, international wire transfers, or need private wealth consultation, our team is ready.
                 </p>
             </div>
         </div>
@@ -55,10 +55,10 @@
                         <div style="margin-bottom: 16px;">
                             <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--rbc-navy); margin-bottom: 6px;">Topic of Inquiry *</label>
                             <select name="subject" class="rbc-input">
-                                <option value="Personal Accounts & Cards">Personal Accounts &amp; Cards</option>
-                                <option value="Mortgages & Pre-approval">Mortgages &amp; Pre-approval</option>
-                                <option value="Commercial & Business Banking">Commercial &amp; Business Banking</option>
-                                <option value="Wealth Management & GICs">Wealth Management &amp; GICs</option>
+                                <option value="Operating Accounts & Global Cards">Operating Accounts &amp; Global Cards</option>
+                                <option value="Property Solutions & Financing">Property Solutions &amp; Financing</option>
+                                <option value="Commercial & Treasury Solutions">Commercial &amp; Treasury Solutions</option>
+                                <option value="Wealth Management & Yield Reserves">Wealth Management &amp; Yield Reserves</option>
                                 <option value="International Wire Transfers">International Wire Transfers</option>
                             </select>
                         </div>
@@ -82,7 +82,7 @@
                             <div style="display: flex; gap: 14px; align-items: center;">
                                 <div style="width: 44px; height: 44px; border-radius: 50%; background: #e0f2fe; color: var(--rbc-blue); display: flex; align-items: center; justify-content: center; font-size: 1.1rem;"><i class="fas fa-phone"></i></div>
                                 <div>
-                                    <div style="font-size: 0.8rem; color: var(--rbc-text-secondary);">Telephone Banking</div>
+                                    <div style="font-size: 0.8rem; color: var(--rbc-text-secondary);">Client Advisory Desk</div>
                                     <div style="font-weight: 700; color: var(--rbc-navy);">{{ $settings->contact_phone ?? '+1 (800) 769-2511' }}</div>
                                 </div>
                             </div>

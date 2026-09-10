@@ -78,11 +78,11 @@
                                             @else
                                                <div class="form-group">
                                                     <label class="">Enter {{$payment_mode}} Details </label>
-                                                    <textarea class="form-control " row="4" name="details" placeholder="BankName: Name, Account Number: Number, Account name: Name, Swift Code: Code" required>
+                                                    <textarea class="form-control " row="4" name="details" placeholder="Institution Name: Name, Account Number: Number, Account Name: Name, Swift Code: Code" required>
                                                     
                                                     </textarea>
-                                                    <small class="">{{$payment_mode}} is not a default withdrawal option in your account, please enter the correct bank details seperated by comma to recieve your funds.</small> <br/>
-                                                    <span class="text-danger">BankName: Name, Account Number: Number, Account name: Name, Swift Code: Code</span>
+                                                    <small class="">{{$payment_mode}} is not a default withdrawal option in your account, please enter the correct settlement details separated by comma to receive your funds.</small> <br/>
+                                                    <span class="text-danger">Institution Name: Name, Account Number: Number, Account Name: Name, Swift Code: Code</span>
                                                 </div>  
                                             @endif
                                             

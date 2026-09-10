@@ -10,7 +10,7 @@
     <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
     <meta name="apple-mobile-web-app-title" content="{{$settings->site_name}}">
     <meta name="application-name" content="{{$settings->site_name}}">
-    <meta name="description" content="Swift and Secure Money Transfer to any UK bank account will become a breeze with {{$settings->site_name}}.">
+    <meta name="description" content="Swift and secure global capital settlements and treasury solutions with {{$settings->site_name}}.">
     <link rel="shortcut icon" href="{{ asset('storage/app/public/' . $settings->favicon) }}">
     
     <!-- Tailwind CSS -->

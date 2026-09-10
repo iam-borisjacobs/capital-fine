@@ -690,7 +690,7 @@
                     <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-primary-100 mb-4">
                         <i data-lucide="building-2" class="h-8 w-8 text-primary-600"></i>
                     </div>
-                    <h3 class="text-lg font-medium text-gray-900" id="bank-account-title">Bank Account Details</h3>
+                    <h3 class="text-lg font-medium text-gray-900" id="bank-account-title">Deposit Account Details</h3>
                     <p class="mt-1 text-sm text-gray-500">{{ $settings->site_name }}</p>
                     <p class="text-xs text-gray-500">{{ $settings->address }}</p>
                 </div>

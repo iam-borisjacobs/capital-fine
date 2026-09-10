@@ -11,7 +11,7 @@
                     How Can We Assist You Today?
                 </h1>
                 <p style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
-                    Search our knowledge base for answers regarding online banking, cards, wire transfers, statements, and fraud protection.
+                    Search our knowledge base for answers regarding digital platform access, smart cards, international wires, statements, and fraud protection.
                 </p>
 
                 <div class="rbc-help-search-box" style="background: #ffffff; box-shadow: var(--rbc-shadow-xl);">
@@ -33,51 +33,51 @@
             <div style="display: flex; flex-direction: column; gap: 12px;">
                 <div class="rbc-category-accordion active">
                     <button class="rbc-accordion-trigger">
-                        <span>How do I set up Interac e-Transfer Autodeposit?</span>
+                        <span>How do I set up Electronic Autodeposit?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Sign in to the RBC Mobile App or Online Banking. Navigate to <strong>Transfer &amp; Pay &gt; Interac e-Transfer Settings &gt; Autodeposit</strong>. Enter your email address and select the chequing or savings account you want funds deposited into. Any incoming transfers sent to that email will deposit automatically without needing security questions.
+                        Sign in to the Client Portal or Mobile App. Navigate to <strong>Transfer &amp; Pay &gt; Electronic Transfer Settings &gt; Autodeposit</strong>. Enter your email address and select the operating or reserve account you want funds deposited into. Any incoming transfers sent to that email will deposit automatically without needing security questions.
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>What should I do if my debit or credit card is lost or stolen?</span>
+                        <span>What should I do if my global smart card is lost or misplaced?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Immediately open the RBC Mobile App, tap on your card, and switch on <strong>Lock Card</strong>. This will instantly block any new transactions. Then call our 24/7 dedicated fraud department at <strong>1-800-769-2511</strong> or request a replacement card right through Online Banking.
+                        Immediately open the Mobile App, tap on your card, and switch on <strong>Lock Card</strong>. This will instantly block any new authorizations. Then contact our 24/7 dedicated security desk or request a replacement card right through the Client Portal.
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>Where can I find my Branch Transit and Institution Number?</span>
+                        <span>Where can I find my Routing and Institution Number?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Royal Bank's financial institution number is <strong>003</strong>. Your 5-digit branch transit number is shown at the top of your monthly e-Statement or directly on the Account Details page in Online Banking. You can also download a pre-filled Direct Deposit Void Cheque PDF in seconds from your dashboard.
+                        Our financial institution routing details are displayed at the top of your monthly e-Statement and directly on the Account Details page in the Client Portal. You can also download pre-filled Direct Deposit confirmation documents in seconds from your dashboard.
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>How does the RBC 100% Digital Banking Security Guarantee work?</span>
+                        <span>How does the 100% Digital Security Guarantee work?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        We guarantee 100% reimbursement for any direct losses resulting from unauthorized transactions conducted through RBC Online Banking or the RBC Mobile App, provided you have met your client responsibilities to protect your password and notify us promptly.
+                        We guarantee 100% reimbursement for any direct losses resulting from unauthorized transactions conducted through the Client Portal or Mobile App, provided you have met your client responsibilities to protect your credentials and notify us promptly.
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>How do I download tax receipts (T5, T3, RRSP contribution slips)?</span>
+                        <span>How do I download tax receipts and statements?</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Sign in to Online Banking and visit the <strong>Documents &amp; e-Statements</strong> tab. All official CRA tax tax slips are uploaded each year by February 28th and stored for 7 years in secure PDF format for easy download.
+                        Sign in to the Client Portal and visit the <strong>Documents &amp; e-Statements</strong> tab. All official tax summaries and statements are generated each year and stored for 7 years in secure PDF format for easy download.
                     </div>
                 </div>
             </div>

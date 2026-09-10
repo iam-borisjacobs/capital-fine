@@ -15,7 +15,7 @@
                     Helping Clients Thrive and Global Communities Prosper
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
-                    {{ $settings->site_name ?? 'Flutran Global' }} is a premier financial institution dedicated to empowering individuals, scale-ups, and corporate enterprises with world-class digital banking and capital management.
+                    {{ $settings->site_name ?? 'Flutran Global' }} is a premier financial institution dedicated to empowering individuals, scale-ups, and corporate enterprises with world-class digital finance, private treasury, and capital management.
                 </p>
                 <div style="display: flex; gap: 14px; flex-wrap: wrap;">
                     <a href="{{ route('register') }}" class="rbc-btn-signin" style="padding: 12px 28px; font-size: 1rem;">Join Our Global Network <i class="fas fa-arrow-right"></i></a>
@@ -39,7 +39,7 @@
                 </div>
                 <div>
                     <div style="font-size: 2.6rem; font-weight: 800; color: var(--rbc-blue);">$1.2B+</div>
-                    <div style="font-size: 0.9rem; color: var(--rbc-text-secondary); font-weight: 600;">Assets &amp; Transactions</div>
+                    <div style="font-size: 0.9rem; color: var(--rbc-text-secondary); font-weight: 600;">Assets &amp; Settlements</div>
                 </div>
                 <div>
                     <div style="font-size: 2.6rem; font-weight: 800; color: var(--rbc-blue);">99.99%</div>
@@ -57,14 +57,14 @@
                     <span class="rbc-badge-pill"><i class="fas fa-users"></i> EXECUTIVE LEADERSHIP</span>
                     <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">Governed by Integrity, Built on Innovation</h2>
                     <p style="color: var(--rbc-text-secondary); line-height: 1.6; margin-bottom: 20px;">
-                        Our executive leadership team brings decades of tier-1 banking expertise across North America, Europe, and Asia. We are dedicated to providing stable, secure, and transparent capital custody.
+                        Our executive leadership team brings decades of global capital markets and financial technology expertise across North America, Europe, and Asia. We are dedicated to providing stable, secure, and transparent capital custody.
                     </p>
                     <ul class="rbc-feature-list" style="margin-bottom: 24px;">
                         <li class="rbc-feature-item"><span><strong>Client First:</strong> Every decision prioritizes the safety, growth, and autonomy of our clients.</span></li>
                         <li class="rbc-feature-item"><span><strong>Uncompromising Security:</strong> Multi-layered encryption, biometric audits, and stringent regulatory compliance.</span></li>
                         <li class="rbc-feature-item"><span><strong>Sustainable Prosperity:</strong> Supporting renewable infrastructure and ethical investments worldwide.</span></li>
                     </ul>
-                    <a href="{{ route('careers') }}" class="rbc-btn-primary">Explore Careers at {{ $settings->site_name ?? 'Our Bank' }}</a>
+                    <a href="{{ route('careers') }}" class="rbc-btn-primary">Explore Careers at {{ $settings->site_name ?? 'Flutran Global' }}</a>
                 </div>
                 <div>
                     <div style="border-radius: 16px; overflow: hidden; box-shadow: var(--rbc-shadow-xl); border: 1px solid var(--rbc-border);">
@@ -102,7 +102,7 @@
                     <div style="font-size: 2.5rem; color: var(--rbc-blue); margin-bottom: 12px;"><i class="fas fa-lightbulb"></i></div>
                     <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--rbc-navy); margin-bottom: 8px;">Fintech Innovation</h3>
                     <p style="font-size: 0.9rem; color: var(--rbc-text-secondary);">
-                        Continuously pioneering modern digital solutions to simplify payments, loans, and portfolio management.
+                        Continuously pioneering modern digital solutions to simplify global settlements, structured financing, and portfolio management.
                     </p>
                 </div>
             </div>

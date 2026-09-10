@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Commercial &amp; Corporate Banking')
+@section('title', 'Commercial &amp; Corporate Treasury Solutions')
 
 @section('content')
 <!-- HERO -->
@@ -44,7 +44,7 @@
                 <!-- Treasury Management -->
                 <div class="rbc-ecosystem-card">
                     <div style="font-size: 2.5rem; color: var(--rbc-gold-dark); margin-bottom: 12px;"><i class="fas fa-vault"></i></div>
-                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--rbc-navy); margin-bottom: 8px;">Global Treasury &amp; Cash Pools</h3>
+                    <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--rbc-navy); margin-bottom: 8px;">Global Treasury &amp; Liquidity Pools</h3>
                     <p style="font-size: 0.88rem; color: var(--rbc-text-secondary); margin-bottom: 16px;">
                         Automated liquidity concentration, multi-currency target balance sweeping, and direct host-to-host API ERP integration.
                     </p>

@@ -163,44 +163,44 @@
                                         <p class="text-sm font-medium text-gray-900">{{ $dp->accountnumber ?? 'N/A' }}</p>
                                     </div>
                                     <div>
-                                        <p class="text-sm text-gray-500 mb-1">Routing/IBAN</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->iban ?? 'N/A' }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Bank Name</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->bankname ?? 'N/A' }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Account Type</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->Accounttype ?? 'N/A' }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Swift Code</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->swiftcode ?? 'N/A' }}</p>
-                                    </div>
-                                    <div class="md:col-span-2">
-                                        <p class="text-sm text-gray-500 mb-1">Bank Address</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->bankaddress ?? 'N/A' }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Country</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->country ?? 'N/A' }}</p>
-                                    </div>
+                                         <p class="text-sm text-gray-500 mb-1">Routing/IBAN</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->iban ?? 'N/A' }}</p>
+                                     </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Institution Name</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->bankname ?? 'N/A' }}</p>
+                                     </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Account Type</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->Accounttype ?? 'N/A' }}</p>
+                                     </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Swift Code</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->swiftcode ?? 'N/A' }}</p>
+                                     </div>
+                                     <div class="md:col-span-2">
+                                         <p class="text-sm text-gray-500 mb-1">Institution Address</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->bankaddress ?? 'N/A' }}</p>
+                                     </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Country</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->country ?? 'N/A' }}</p>
+                                     </div>
                                 </div>
                             @elseif($dp->payment_mode == 'Domestic Transfer')
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Account Name</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->accountname ?? 'N/A' }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Account Number</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->accountnumber ?? 'N/A' }}</p>
-                                    </div>
-                                    <div>
-                                        <p class="text-sm text-gray-500 mb-1">Bank Name</p>
-                                        <p class="text-sm font-medium text-gray-900">{{ $dp->bankname ?? 'N/A' }}</p>
-                                    </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Account Name</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->accountname ?? 'N/A' }}</p>
+                                     </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Account Number</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->accountnumber ?? 'N/A' }}</p>
+                                     </div>
+                                     <div>
+                                         <p class="text-sm text-gray-500 mb-1">Institution Name</p>
+                                         <p class="text-sm font-medium text-gray-900">{{ $dp->bankname ?? 'N/A' }}</p>
+                                     </div>
                                     <div>
                                         <p class="text-sm text-gray-500 mb-1">Account Type</p>
                                         <p class="text-sm font-medium text-gray-900">{{ $dp->Accounttype ?? 'N/A' }}</p>

@@ -4,9 +4,9 @@
     <fieldset>
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label class="">Bank Name</label>
+                <label class="">Financial Institution / Bank Name</label>
                 <input type="text" name="bank_name" value="{{ Auth::user()->bank_name }}" class="form-control "
-                    placeholder="Enter bank name">
+                    placeholder="Enter institution or bank name">
             </div>
             <div class="form-group col-md-6">
                 <label class="">Account Name</label>

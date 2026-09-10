@@ -153,7 +153,7 @@
                         </div>
                         <h3 class="ml-3 font-medium text-gray-900">Wire Transfer</h3>
                     </div>
-                    <p class="text-sm text-gray-500">Transfer funds directly to international bank accounts.</p>
+                    <p class="text-sm text-gray-500">Transfer funds directly to international accounts.</p>
                 </div>
                 
                 <!-- Cryptocurrency -->
@@ -441,7 +441,7 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label for="bankname" class="block text-sm font-medium text-gray-700 mb-1">Bank Name</label>
+                            <label for="bankname" class="block text-sm font-medium text-gray-700 mb-1">Beneficiary Financial Institution / Bank</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                     <i data-lucide="building" class="h-5 w-5 text-gray-400"></i>
@@ -452,14 +452,14 @@
                                     id="bankname" 
                                     x-model="bankName"
                                     class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
-                                    placeholder="Enter bank name"
+                                    placeholder="Enter institution or bank name"
                                     x-bind:required="withdrawMethod === 'Wire Transfer'"
                                 />
                             </div>
                         </div>
 
                         <div>
-                            <label for="bankaddress" class="block text-sm font-medium text-gray-700 mb-1">Bank Address</label>
+                            <label for="bankaddress" class="block text-sm font-medium text-gray-700 mb-1">Institution Address</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                     <i data-lucide="map-pin" class="h-5 w-5 text-gray-400"></i>
@@ -470,7 +470,7 @@
                                     id="bankaddress" 
                                     x-model="bankAddress"
                                     class="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
-                                    placeholder="Enter bank address"
+                                    placeholder="Enter institution address"
                                     x-bind:required="withdrawMethod === 'Wire Transfer'"
                                 />
                             </div>

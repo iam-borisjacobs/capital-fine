@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
     <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
     <title>{{ $settings->site_name }} | @yield('title')</title>
-    <meta name="description" content="Swift and Secure Money Transfer to any UK bank account will become a breeze with {{$settings->site_name}}." />
+    <meta name="description" content="Swift and secure global capital settlements and treasury solutions with {{$settings->site_name}}." />
     <link rel="shortcut icon" href="{{ asset('storage/app/public/' . $settings->favicon) }}" />
     <link rel="preload" href="path/to/GraphikRegular.otf" as="font" type="font/otf" crossorigin="anonymous">
 
@@ -279,7 +279,7 @@
                     <div class="circle"></div>
                     <div class="core"></div>
                 </div>
-                <div class="text">{{ $settings->site_name }} Banking</div>
+                <div class="text">{{ $settings->site_name }} Capital</div>
             </div>
         </div>
     </div>
@@ -437,7 +437,7 @@
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
                         <i data-lucide="shield-check" class="h-4 w-4 text-green-500 mr-2"></i>
-                        <span class="text-xs text-gray-500">Secure Banking</span>
+                        <span class="text-xs text-gray-500">Secure Portal</span>
                     </div>
                     <span class="text-xs text-gray-400">v1.2.0</span>
                 </div>
@@ -722,7 +722,7 @@
 
                     <!-- Menu Title -->
                     <div class="text-center mb-5">
-                        <h2 class="text-xl font-bold text-gray-800">Banking Menu</h2>
+                        <h2 class="text-xl font-bold text-gray-800">Finance &amp; Services Menu</h2>
                         <p class="text-sm text-gray-500">Select an option to continue</p>
                     </div>
 

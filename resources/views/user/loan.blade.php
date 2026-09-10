@@ -118,7 +118,7 @@
                             </div>
                             <div>
                                 <h4 class="font-medium text-gray-900 mb-1">Secure & Confidential</h4>
-                                <p class="text-sm text-gray-600">Your information is protected with bank-level security</p>
+                                <p class="text-sm text-gray-600">Your information is protected with institutional-grade security</p>
                             </div>
                         </div>
                     </div>

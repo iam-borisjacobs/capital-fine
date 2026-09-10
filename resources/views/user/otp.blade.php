@@ -106,7 +106,7 @@
                 </div>
                 <div class="ml-3">
                     <h3 class="text-sm font-medium text-gray-900">Security Notice</h3>
-                    <p class="text-xs text-gray-500 mt-1">Never share your OTP with anyone, including bank staff. This code is only used to verify your transaction.</p>
+                    <p class="text-xs text-gray-500 mt-1">Never share your OTP with anyone, including staff representatives. This code is only used to verify your transaction.</p>
                 </div>
             </div>
         </div>

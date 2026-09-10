@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Today\'s Interest Rates &amp; Foreign Exchange')
+@section('title', 'Today\'s Yield Benchmarks &amp; Foreign Exchange')
 
 @section('content')
 <!-- HERO -->
@@ -11,14 +11,14 @@
                     <i class="fas fa-percent"></i> DAILY FINANCIAL BENCHMARKS
                 </span>
                 <h1 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 16px; line-height: 1.15;">
-                    Current Interest Rates &amp; Real-Time Foreign Exchange
+                    Current Yield Rates &amp; Real-Time Foreign Exchange
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
-                    Review live lending rates, mortgage specials, guaranteed investment yields, and calculate real-time foreign exchange conversions.
+                    Review live lending benchmarks, property financing rates, structured yield reserves, and calculate real-time foreign exchange conversions.
                 </p>
                 <div style="display: flex; gap: 14px; flex-wrap: wrap;">
                     <a href="#fx-converter" class="rbc-btn-signin" style="padding: 12px 28px; font-size: 1rem;">Convert Currency <i class="fas fa-arrow-right"></i></a>
-                    <a href={{ route('calculators') }} class="rbc-btn-secondary" style="border-color: #ffffff; color: #ffffff;">Mortgage &amp; Loan Calculators</a>
+                    <a href={{ route('calculators') }} class="rbc-btn-secondary" style="border-color: #ffffff; color: #ffffff;">Property &amp; Financing Calculators</a>
                 </div>
             </div>
         </div>
@@ -27,18 +27,18 @@
     <!-- KEY RATES SUMMARY BOARD -->
     <section class="rbc-section" style="background-color: var(--rbc-bg);">
         <div class="rbc-container">
-            <h2 class="rbc-section-title">Today's Benchmark Lending Rates</h2>
-            <p class="rbc-section-subtitle">Official benchmark rates updated daily in accordance with the Bank of Canada policy rate.</p>
+            <h2 class="rbc-section-title">Today's Benchmark Financing Rates</h2>
+            <p class="rbc-section-subtitle">Official benchmark rates updated daily in accordance with central monetary policy benchmarks.</p>
 
             <div class="rbc-quick-tools-bar" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 30px;">
                 <div class="rbc-ecosystem-card" style="padding: 20px; text-align: center;">
-                    <div style="font-size: 0.82rem; font-weight: 700; color: var(--rbc-text-muted); text-transform: uppercase;">Royal Bank Prime</div>
+                    <div style="font-size: 0.82rem; font-weight: 700; color: var(--rbc-text-muted); text-transform: uppercase;">Benchmark Prime</div>
                     <div style="font-size: 2.4rem; font-weight: 800; color: var(--rbc-blue); margin: 6px 0;">5.95%</div>
                     <div style="font-size: 0.78rem; color: var(--rbc-text-secondary);">Effective Today</div>
                 </div>
 
                 <div class="rbc-ecosystem-card" style="padding: 20px; text-align: center;">
-                    <div style="font-size: 0.82rem; font-weight: 700; color: var(--rbc-text-muted); text-transform: uppercase;">5-Year Fixed Mortgage</div>
+                    <div style="font-size: 0.82rem; font-weight: 700; color: var(--rbc-text-muted); text-transform: uppercase;">5-Year Fixed Property</div>
                     <div style="font-size: 2.4rem; font-weight: 800; color: var(--rbc-blue); margin: 6px 0;">4.89%</div>
                     <div style="font-size: 0.78rem; color: #16a34a; font-weight: 700;">Special Offer APR</div>
                 </div>
@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="rbc-ecosystem-card" style="padding: 20px; text-align: center;">
-                    <div style="font-size: 0.82rem; font-weight: 700; color: var(--rbc-text-muted); text-transform: uppercase;">High-Interest eSavings</div>
+                    <div style="font-size: 0.82rem; font-weight: 700; color: var(--rbc-text-muted); text-transform: uppercase;">High-Yield Liquidity</div>
                     <div style="font-size: 2.4rem; font-weight: 800; color: var(--rbc-blue); margin: 6px 0;">3.25%</div>
                     <div style="font-size: 0.78rem; color: var(--rbc-text-secondary);">No Minimum Balance</div>
                 </div>
@@ -69,37 +69,37 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>5-Year Fixed Closed Mortgage</strong></td>
+                            <td><strong>5-Year Fixed Property Facility</strong></td>
                             <td>6.49%</td>
                             <td><strong style="color: var(--rbc-blue);">4.89%</strong></td>
                             <td>4.92%</td>
                         </tr>
                         <tr>
-                            <td><strong>3-Year Fixed Closed Mortgage</strong></td>
+                            <td><strong>3-Year Fixed Property Facility</strong></td>
                             <td>6.74%</td>
                             <td><strong style="color: var(--rbc-blue);">5.14%</strong></td>
                             <td>5.18%</td>
                         </tr>
                         <tr>
-                            <td><strong>5-Year Variable Closed (Prime - 0.50%)</strong></td>
+                            <td><strong>5-Year Variable Facility (Prime - 0.50%)</strong></td>
                             <td>5.95%</td>
                             <td><strong style="color: var(--rbc-blue);">5.45%</strong></td>
                             <td>5.48%</td>
                         </tr>
                         <tr>
-                            <td><strong>1-Year Non-Redeemable GIC</strong></td>
+                            <td><strong>1-Year Guaranteed Certificate</strong></td>
                             <td>4.25%</td>
                             <td><strong style="color: var(--rbc-blue);">4.75%</strong></td>
                             <td>4.75%</td>
                         </tr>
                         <tr>
-                            <td><strong>2-Year Non-Redeemable GIC</strong></td>
+                            <td><strong>2-Year Guaranteed Certificate</strong></td>
                             <td>4.00%</td>
                             <td><strong style="color: var(--rbc-blue);">4.50%</strong></td>
                             <td>4.50%</td>
                         </tr>
                         <tr>
-                            <td><strong>5-Year Non-Redeemable GIC</strong></td>
+                            <td><strong>5-Year Guaranteed Certificate</strong></td>
                             <td>3.75%</td>
                             <td><strong style="color: var(--rbc-blue);">4.15%</strong></td>
                             <td>4.15%</td>
@@ -114,7 +114,7 @@
     <section class="rbc-section" id="fx-converter" style="background-color: #ffffff;">
         <div class="rbc-container">
             <h2 class="rbc-section-title">Foreign Exchange Currency Converter</h2>
-            <p class="rbc-section-subtitle">Real-time competitive foreign currency exchange rates for international wires, travel cash, and FX drafts.</p>
+            <p class="rbc-section-subtitle">Real-time competitive foreign currency exchange rates for international wires, travel disbursements, and institutional FX settlements.</p>
 
             <div class="rbc-calc-card">
                 <div class="rbc-calc-grid">
@@ -156,7 +156,7 @@
                         <div class="rbc-calc-amount" id="fxResult">735.29 USD</div>
                         <p style="font-size: 0.85rem; opacity: 0.85; margin-top: 6px;">Zero hidden commissions. Indicative exchange rate.</p>
                         <div style="margin-top: 24px;">
-                            <a href={{ route('login') }} class="rbc-btn-signin" style="width: 100%; justify-content: center;">Send International Money Transfer</a>
+                            <a href={{ route('login') }} class="rbc-btn-signin" style="width: 100%; justify-content: center;">Execute International Wire Transfer</a>
                         </div>
                     </div>
                 </div>

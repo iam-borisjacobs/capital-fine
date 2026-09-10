@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Personal & Commercial Banking, Mortgages, Investments')
+@section('title', 'Institutional Capital, Global Cards, Real Estate & Wealth Solutions')
 
 @section('styles')
 <style>
@@ -114,7 +114,7 @@
 
 @section('content')
 
-    <!-- 4. INTERACTIVE HERO SLIDER WITH SLIDING BANKING IMAGERY -->
+    <!-- 4. INTERACTIVE HERO SLIDER WITH SLIDING FINANCIAL IMAGERY -->
     <section class="rbc-hero-slider" id="rbcHeroSlider">
         <!-- Slide 1: Global Capital & Financial Growth -->
         <div class="rbc-slide active" style="background-image: url('{{ asset('storage/app/public/photos/hero_slide1.jpg') }}');">
@@ -137,7 +137,7 @@
                                 Explore Wealth Portfolios
                             </a>
                         </div>
-                        <p class="rbc-hero-fineprint" style="color: rgba(255,255,255,0.7);"><i class="fas fa-shield-halved"></i> 256-Bit SSL Encrypted Institutional Banking System.</p>
+                        <p class="rbc-hero-fineprint" style="color: rgba(255,255,255,0.7);"><i class="fas fa-shield-halved"></i> 256-Bit SSL Encrypted Institutional Financial Infrastructure.</p>
                     </div>
 
                     <div class="rbc-hero-visual">
@@ -152,7 +152,7 @@
                             </div>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
                                 <a href="{{ route('send-money') }}" style="background: var(--rbc-blue); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-size: 0.82rem; font-weight: 700;">
-                                    <i class="fas fa-paper-plane"></i> Wire Transfer
+                                    <i class="fas fa-paper-plane"></i> Direct Wire
                                 </a>
                                 <a href="{{ route('rates') }}" style="background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-size: 0.82rem; font-weight: 700;">
                                     <i class="fas fa-chart-pie"></i> Rates &amp; FX
@@ -164,38 +164,38 @@
             </div>
         </div>
 
-        <!-- Slide 2: Digital Banking & Contactless Cards -->
+        <!-- Slide 2: Digital Platform & Global Cards -->
         <div class="rbc-slide" style="background-image: url('{{ asset('storage/app/public/photos/hero_slide2.jpg') }}');">
             <div class="rbc-slide-overlay"></div>
             <div class="rbc-container rbc-slide-container">
                 <div class="rbc-hero-grid">
                     <div class="rbc-hero-content">
                         <span class="rbc-badge-pill" style="background: rgba(0, 163, 224, 0.2); color: #00a3e0; border-color: rgba(0, 163, 224, 0.4);">
-                            <i class="fas fa-mobile-screen"></i> SMART DIGITAL BANKING
+                            <i class="fas fa-mobile-screen"></i> SMART DIGITAL PLATFORM
                         </span>
-                        <h1 class="rbc-hero-title" style="color: #ffffff;">Fast, Flexible Everyday Banking on Your Phone &amp; Web</h1>
+                        <h1 class="rbc-hero-title" style="color: #ffffff;">Fast, Flexible Financial Control on Your Phone &amp; Web</h1>
                         <p class="rbc-hero-desc" style="color: rgba(255,255,255,0.9);">
-                            Send money with zero fees, manage contactless credit cards, and enjoy 24/7 financial control in the palm of your hand.
+                            Transfer capital with zero friction, manage multi-currency global cards, and enjoy 24/7 liquidity management in the palm of your hand.
                         </p>
                         <div class="rbc-hero-actions">
                             <a href="{{ route('credit-cards') }}" class="rbc-btn-primary" style="padding: 13px 30px; font-size: 1rem;">
-                                Explore Credit Cards <i class="fas fa-arrow-right"></i>
+                                Explore Global Cards <i class="fas fa-arrow-right"></i>
                             </a>
                             <a href="{{ route('login') }}" class="rbc-btn-secondary" style="border-color: #ffffff; color: #ffffff;">
                                 Sign In to Portal
                             </a>
                         </div>
-                        <p class="rbc-hero-fineprint" style="color: rgba(255,255,255,0.7);"><i class="fas fa-bolt"></i> Instant contactless activation &amp; zero account opening fees.</p>
+                        <p class="rbc-hero-fineprint" style="color: rgba(255,255,255,0.7);"><i class="fas fa-bolt"></i> Instant digital issuance &amp; seamless cross-border spending.</p>
                     </div>
 
                     <div class="rbc-hero-visual">
                         <div class="rbc-glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 12px; margin-bottom: 16px;">
-                                <span style="font-weight: 700; color: #fff;"><i class="fas fa-credit-card" style="color: var(--rbc-gold);"></i> Metal Elite Card</span>
+                                <span style="font-weight: 700; color: #fff;"><i class="fas fa-credit-card" style="color: var(--rbc-gold);"></i> Apex Titanium Card</span>
                                 <span style="font-size: 0.8rem; color: #94a3b8;">•••• 9876</span>
                             </div>
                             <div style="background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: 12px; padding: 14px; margin-bottom: 14px; border: 1px solid rgba(255,255,255,0.1);">
-                                <div style="font-size: 0.75rem; color: #94a3b8;">Available Balance</div>
+                                <div style="font-size: 0.75rem; color: #94a3b8;">Available Liquidity</div>
                                 <div style="font-size: 1.6rem; font-weight: 800; color: #ffffff;">$514,520.80</div>
                             </div>
                             <div style="display: flex; gap: 8px;">
@@ -212,38 +212,38 @@
             </div>
         </div>
 
-        <!-- Slide 3: Private Wealth & Family Security -->
+        <!-- Slide 3: Private Wealth & Portfolio Advisory -->
         <div class="rbc-slide" style="background-image: url('{{ asset('storage/app/public/photos/hero_slide3.jpg') }}');">
             <div class="rbc-slide-overlay"></div>
             <div class="rbc-container rbc-slide-container">
                 <div class="rbc-hero-grid">
                     <div class="rbc-hero-content">
                         <span class="rbc-badge-pill" style="background: rgba(22, 163, 74, 0.2); color: #4ade80; border-color: rgba(22, 163, 74, 0.4);">
-                            <i class="fas fa-hand-holding-dollar"></i> PRIVATE BANKING &amp; ADVISORY
+                            <i class="fas fa-hand-holding-dollar"></i> PRIVATE CLIENT &amp; ADVISORY
                         </span>
                         <h1 class="rbc-hero-title" style="color: #ffffff;">Personalized Wealth Strategies for What Truly Matters</h1>
                         <p class="rbc-hero-desc" style="color: rgba(255,255,255,0.9);">
-                            From purchasing your dream home to compounding retirement assets, our certified financial advisors craft customized roadmaps for you.
+                            From acquiring prime real estate to compounding strategic assets, our certified portfolio advisors craft customized roadmaps for you.
                         </p>
                         <div class="rbc-hero-actions">
                             <a href="{{ route('contact') }}" class="rbc-btn-primary" style="padding: 13px 30px; font-size: 1rem;">
                                 Book an Advisor <i class="fas fa-arrow-right"></i>
                             </a>
                             <a href="{{ route('calculators') }}" class="rbc-btn-secondary" style="border-color: #ffffff; color: #ffffff;">
-                                Mortgage &amp; Loan Calculators
+                                Financing &amp; Wealth Estimator
                             </a>
                         </div>
-                        <p class="rbc-hero-fineprint" style="color: rgba(255,255,255,0.7);"><i class="fas fa-users"></i> Over 70,000 satisfied clients guided worldwide.</p>
+                        <p class="rbc-hero-fineprint" style="color: rgba(255,255,255,0.7);"><i class="fas fa-users"></i> Over 70,000 global clients guided worldwide.</p>
                     </div>
 
                     <div class="rbc-hero-visual">
                         <div class="rbc-glass-card">
                             <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 12px; margin-bottom: 16px;">
-                                <span style="font-weight: 700; color: #fff;"><i class="fas fa-house" style="color: var(--rbc-gold);"></i> Home Financing</span>
+                                <span style="font-weight: 700; color: #fff;"><i class="fas fa-house" style="color: var(--rbc-gold);"></i> Property Solutions</span>
                                 <span style="font-size: 0.8rem; background: var(--rbc-gold); color: var(--rbc-navy); font-weight: 700; padding: 2px 8px; border-radius: 4px;">Prime Rate</span>
                             </div>
                             <div style="margin-bottom: 14px;">
-                                <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">Fixed 5-Year Mortgage</div>
+                                <div style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">Fixed 5-Year Property Rate</div>
                                 <div style="font-size: 1.8rem; font-weight: 800; color: #ffffff;">4.49% <span style="font-size: 0.9rem; font-weight: 500; color: #4ade80;">Special APR</span></div>
                             </div>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
@@ -251,7 +251,7 @@
                                     Pre-Approval
                                 </a>
                                 <a href="{{ route('loans') }}" style="background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; padding: 10px; border-radius: 8px; text-align: center; font-size: 0.82rem; font-weight: 700;">
-                                    Personal Loans
+                                    Credit Facilities
                                 </a>
                             </div>
                         </div>
@@ -278,111 +278,111 @@
             <div class="rbc-promo-grid">
                 <a href="{{ route('accounts') }}" class="rbc-promo-card">
                     <div class="rbc-promo-card-thumb">
-                        <img src="{{ asset('storage/app/public/photos/promo_chequing.jpg') }}" alt="Chequing Accounts">
+                        <img src="{{ asset('storage/app/public/photos/promo_chequing.jpg') }}" alt="Operating Accounts">
                     </div>
                     <div class="rbc-promo-card-body">
-                        <span class="rbc-promo-card-title">Chequing Accounts</span>
+                        <span class="rbc-promo-card-title">Operating Accounts</span>
                     </div>
                 </a>
 
                 <a href="{{ route('investments') }}" class="rbc-promo-card">
                     <div class="rbc-promo-card-thumb">
-                        <img src="{{ asset('storage/app/public/photos/promo_wealth.jpg') }}" alt="High-Interest Wealth">
+                        <img src="{{ asset('storage/app/public/photos/promo_wealth.jpg') }}" alt="High-Yield Portfolio">
                     </div>
                     <div class="rbc-promo-card-body">
-                        <span class="rbc-promo-card-title">High-Interest Wealth</span>
+                        <span class="rbc-promo-card-title">High-Yield Portfolio</span>
                     </div>
                 </a>
 
                 <a href="{{ route('credit-cards') }}" class="rbc-promo-card">
                     <div class="rbc-promo-card-thumb">
-                        <img src="{{ asset('storage/app/public/photos/promo_cards.jpg') }}" alt="Rewards Credit Cards">
+                        <img src="{{ asset('storage/app/public/photos/promo_cards.jpg') }}" alt="Smart Global Cards">
                     </div>
                     <div class="rbc-promo-card-body">
-                        <span class="rbc-promo-card-title">Rewards Credit Cards</span>
+                        <span class="rbc-promo-card-title">Smart Global Cards</span>
                     </div>
                 </a>
 
                 <a href="{{ route('rewards') }}" class="rbc-promo-card">
                     <div class="rbc-promo-card-thumb">
-                        <img src="{{ asset('storage/app/public/photos/promo_rewards.jpg') }}" alt="Cashback & Perks">
+                        <img src="{{ asset('storage/app/public/photos/promo_rewards.jpg') }}" alt="Rewards & Perks">
                     </div>
                     <div class="rbc-promo-card-body">
-                        <span class="rbc-promo-card-title">Cashback &amp; Perks</span>
+                        <span class="rbc-promo-card-title">Rewards &amp; Perks</span>
                     </div>
                 </a>
 
                 <a href="{{ route('investments') }}" class="rbc-promo-card">
                     <div class="rbc-promo-card-thumb">
-                        <img src="{{ asset('storage/app/public/photos/promo_investing.jpg') }}" alt="Start Investing Today">
+                        <img src="{{ asset('storage/app/public/photos/promo_investing.jpg') }}" alt="Strategic Asset Allocation">
                     </div>
                     <div class="rbc-promo-card-body">
-                        <span class="rbc-promo-card-title">Start Investing Today</span>
+                        <span class="rbc-promo-card-title">Strategic Asset Allocation</span>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 6. WELCOME TO PERSONAL BANKING (3-CARD ECOSYSTEM) -->
+    <!-- 6. WELCOME TO PERSONAL & WEALTH SOLUTIONS (3-CARD ECOSYSTEM) -->
     <section class="rbc-section" style="background-color: var(--rbc-bg);">
         <div class="rbc-container">
-            <h2 class="rbc-section-title">Welcome to {{ $settings->site_name ?? 'Flutran Global' }} Personal Banking</h2>
-            <p class="rbc-section-subtitle">Explore the financial products and services available to help you manage your money, buy a home, grow your investments, and build your future.</p>
+            <h2 class="rbc-section-title">Welcome to {{ $settings->site_name ?? 'Flutran Global' }} Financial Platform</h2>
+            <p class="rbc-section-subtitle">Explore institutional-grade financial solutions, global cards, property financing, and private wealth management designed to accelerate your capital.</p>
 
             <div class="rbc-ecosystem-grid">
                 <!-- Card 1: Products & Services -->
                 <div class="rbc-ecosystem-card">
                     <div class="rbc-ecosystem-header">
-                        <h3 class="rbc-ecosystem-title">Products and Services</h3>
+                        <h3 class="rbc-ecosystem-title">Products and Solutions</h3>
                     </div>
                     <div class="rbc-ecosystem-body">
                         <ul class="rbc-feature-list">
                             <li class="rbc-feature-item">
                                 <a href="{{ route('mortgages') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-house"></i></div>
-                                    <span>Explore Mortgage Options</span>
+                                    <span>Explore Property Solutions</span>
                                 </a>
                             </li>
                             <li class="rbc-feature-item">
                                 <a href="{{ route('accounts') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-wallet"></i></div>
-                                    <span>Open a Bank Account</span>
+                                    <span>Open an Operating Account</span>
                                 </a>
                             </li>
                             <li class="rbc-feature-item">
                                 <a href="{{ route('investments') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-chart-pie"></i></div>
-                                    <span>Personal Wealth &amp; Investing</span>
+                                    <span>Personal Wealth &amp; Portfolios</span>
                                 </a>
                             </li>
                             <li class="rbc-feature-item">
                                 <a href="{{ route('loans') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-coins"></i></div>
-                                    <span>Loans &amp; Lines of Credit</span>
+                                    <span>Credit Facilities &amp; Financing</span>
                                 </a>
                             </li>
                             <li class="rbc-feature-item">
                                 <a href="{{ route('credit-cards') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-credit-card"></i></div>
-                                    <span>Find a Credit Card</span>
+                                    <span>Explore Global Cards</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="rbc-ecosystem-footer">
-                        <a href="{{ route('accounts') }}" class="rbc-link-arrow">View all products <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('accounts') }}" class="rbc-link-arrow">View all solutions <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
 
                 <!-- Card 2: Customer Service -->
                 <div class="rbc-ecosystem-card">
                     <div class="rbc-ecosystem-header">
-                        <h3 class="rbc-ecosystem-title">Customer Service</h3>
+                        <h3 class="rbc-ecosystem-title">Client Advisory</h3>
                     </div>
                     <div class="rbc-ecosystem-body">
                         <p style="font-size: 0.88rem; color: var(--rbc-text-secondary); margin-bottom: 16px;">
-                            <strong>Direct Support:</strong> Log in to Online Banking or connect directly with an expert banking advisor for fast, dedicated assistance.
+                            <strong>Direct Support:</strong> Log in to Client Portal or connect directly with an executive wealth advisor for fast, dedicated assistance.
                         </p>
                         <ul class="rbc-feature-list">
                             <li class="rbc-feature-item">
@@ -394,7 +394,7 @@
                             <li class="rbc-feature-item">
                                 <a href="{{ route('locations') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-map-location-dot"></i></div>
-                                    <span>Find a Branch or ATM</span>
+                                    <span>Find Client Centers &amp; Locations</span>
                                 </a>
                             </li>
                             <li class="rbc-feature-item">
@@ -406,7 +406,7 @@
                             <li class="rbc-feature-item">
                                 <a href="{{ route('digital-banking') }}">
                                     <div class="rbc-feature-icon"><i class="fas fa-mobile-screen"></i></div>
-                                    <span>Benefits of Digital Banking</span>
+                                    <span>Benefits of Digital Platform</span>
                                 </a>
                             </li>
                         </ul>
@@ -426,9 +426,9 @@
                             <div class="rbc-app-icon-badge">
                                 <i class="fas fa-shield-halved"></i>
                             </div>
-                            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--rbc-navy); margin-bottom: 8px;">24/7 Digital Banking</h4>
+                            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--rbc-navy); margin-bottom: 8px;">24/7 Digital Platform</h4>
                             <p style="font-size: 0.9rem; color: var(--rbc-text-secondary); line-height: 1.5; margin-bottom: 18px;">
-                                Pay bills, wire funds securely worldwide, monitor live transactions, and manage security settings from any device.
+                                Manage assets, wire funds securely worldwide, monitor live transactions, and configure security settings from any device.
                             </p>
                             <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
                                 <a href="{{ route('login') }}" class="rbc-btn-primary" style="font-size: 0.82rem; padding: 6px 14px;">Sign In Now</a>
@@ -437,7 +437,7 @@
                         </div>
                     </div>
                     <div class="rbc-ecosystem-footer">
-                        <a href="{{ route('digital-banking') }}" class="rbc-link-arrow">Learn more about Digital Banking <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('digital-banking') }}" class="rbc-link-arrow">Learn more about Digital Platform <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -447,13 +447,13 @@
     <!-- 7. "HOW CAN WE HELP YOU TODAY?" SECTION -->
     <section class="rbc-section rbc-help-hub">
         <div class="rbc-container">
-            <h2 class="rbc-section-title">How can we help you today?</h2>
+            <h2 class="rbc-section-title">How can we assist you today?</h2>
 
             <!-- Quick Action 4-Card Strip -->
             <div class="rbc-quick-tools-bar">
                 <a href="{{ route('rates') }}" class="rbc-quick-tool-card">
                     <div class="rbc-quick-tool-icon"><i class="fas fa-percent"></i></div>
-                    <span>Today's Rates</span>
+                    <span>Market Rates</span>
                 </a>
                 <a href="{{ route('rates') }}" class="rbc-quick-tool-card">
                     <div class="rbc-quick-tool-icon"><i class="fas fa-arrow-right-arrow-left"></i></div>
@@ -461,11 +461,11 @@
                 </a>
                 <a href="{{ route('calculators') }}" class="rbc-quick-tool-card">
                     <div class="rbc-quick-tool-icon"><i class="fas fa-calculator"></i></div>
-                    <span>Calculate Loan &amp; Mortgage</span>
+                    <span>Financing &amp; Wealth Estimator</span>
                 </a>
                 <a href="{{ route('investments') }}" class="rbc-quick-tool-card">
-                    <div class="rbc-quick-tool-icon"><i class="fas fa-piggy-bank"></i></div>
-                    <span>Boost Savings &amp; Wealth</span>
+                    <div class="rbc-quick-tool-icon"><i class="fas fa-chart-pie"></i></div>
+                    <span>Portfolio Growth</span>
                 </a>
             </div>
 
@@ -473,34 +473,34 @@
             <div class="rbc-category-grid">
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>Buying a Home</span>
+                        <span>Property Acquisition &amp; Financing</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Discover step-by-step guidance for first-time buyers, get pre-approved in minutes, and lock in competitive fixed or variable mortgage rates.
-                        <div style="margin-top: 10px;"><a href="{{ route('mortgages') }}" class="rbc-link-arrow">Explore Home Buying Guide <i class="fas fa-arrow-right"></i></a></div>
+                        Discover step-by-step guidance for real estate acquisitions, get pre-approved in minutes, and lock in competitive fixed or variable property rates.
+                        <div style="margin-top: 10px;"><a href="{{ route('mortgages') }}" class="rbc-link-arrow">Explore Property Solutions <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>New Accounts &amp; Personal Banking</span>
+                        <span>New Accounts &amp; Personal Solutions</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Start your journey with flexible chequing options, high-interest savings accounts, and dedicated international wire transfer solutions.
-                        <div style="margin-top: 10px;"><a href="{{ route('accounts') }}" class="rbc-link-arrow">Explore Bank Accounts <i class="fas fa-arrow-right"></i></a></div>
+                        Start your journey with flexible operating accounts, high-yield deposit solutions, and dedicated international wire facilities.
+                        <div style="margin-top: 10px;"><a href="{{ route('accounts') }}" class="rbc-link-arrow">Explore Operating Accounts <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>Student &amp; Youth Banking</span>
+                        <span>Student &amp; Youth Solutions</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Zero monthly fee student accounts, student lines of credit with low prime rates, and cash back cards built for campus life.
-                        <div style="margin-top: 10px;"><a href="{{ route('accounts') }}" class="rbc-link-arrow">Student Banking Hub <i class="fas fa-arrow-right"></i></a></div>
+                        Zero monthly fee student accounts, credit facilities with low prime rates, and smart reward cards built for modern campus life.
+                        <div style="margin-top: 10px;"><a href="{{ route('accounts') }}" class="rbc-link-arrow">Student Solutions Hub <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 </div>
 
@@ -510,29 +510,29 @@
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Maximize your savings with high-yield term deposits, mutual funds, and diversified portfolios guided by experienced wealth managers.
+                        Maximize your assets with high-yield term deposits, portfolio funds, and diversified holdings guided by experienced wealth managers.
                         <div style="margin-top: 10px;"><a href="{{ route('investments') }}" class="rbc-link-arrow">Wealth Calculators &amp; Plans <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>Small Business Solutions</span>
+                        <span>Small Business &amp; Enterprise Solutions</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        Custom business chequing accounts, commercial lines of credit, payroll automation, and payment gateway integrations for enterprises.
-                        <div style="margin-top: 10px;"><a href="{{ route('business') }}" class="rbc-link-arrow">Business Banking Hub <i class="fas fa-arrow-right"></i></a></div>
+                        Custom corporate operating accounts, commercial credit lines, treasury automation, and payment gateway integrations for enterprises.
+                        <div style="margin-top: 10px;"><a href="{{ route('business') }}" class="rbc-link-arrow">Business Solutions Hub <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 </div>
 
                 <div class="rbc-category-accordion">
                     <button class="rbc-accordion-trigger">
-                        <span>Online &amp; Mobile Banking Security</span>
+                        <span>Online &amp; Mobile Platform Security</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="rbc-accordion-body">
-                        256-bit SSL encryption, multi-factor verification, 24/7 fraud monitoring, and our 100% Security Guarantee to safeguard your assets.
+                        256-bit SSL encryption, multi-factor verification, 24/7 fraud monitoring, and our 100% Security Guarantee to safeguard your capital.
                         <div style="margin-top: 10px;"><a href="{{ route('security') }}" class="rbc-link-arrow">Security Details <i class="fas fa-arrow-right"></i></a></div>
                     </div>
                 </div>
@@ -542,7 +542,7 @@
             <div class="rbc-help-search-box">
                 <span class="rbc-help-search-label">Did not find what you are looking for?</span>
                 <form class="rbc-help-search-field" action="{{ route('help') }}" method="get">
-                    <input type="text" name="q" class="rbc-input" placeholder="Search topics, questions, or banking terms...">
+                    <input type="text" name="q" class="rbc-input" placeholder="Search topics, questions, or financial terms...">
                     <button type="submit" class="rbc-btn-primary" style="padding: 10px 24px;">Find</button>
                 </form>
             </div>
@@ -552,7 +552,7 @@
     <!-- 8. "MY MONEY MATTERS" EDITORIAL SECTION -->
     <section class="rbc-section" style="background-color: var(--rbc-bg);">
         <div class="rbc-container">
-            <h2 class="rbc-section-title">Financial Insights &amp; Guidance</h2>
+            <h2 class="rbc-section-title">Financial Insights &amp; Market Guidance</h2>
             <p class="rbc-section-subtitle">Articles, expert analysis, and calculators to help you take control of your financial wellbeing and reach your goals.</p>
 
             <div class="rbc-article-grid">
@@ -563,8 +563,8 @@
                         <span style="position: relative; z-index: 2; color: #fff; font-size: 0.8rem; font-weight: 700; background: rgba(0,34,68,0.7); padding: 2px 8px; border-radius: 4px;"><i class="fas fa-chart-line"></i> Markets</span>
                     </div>
                     <div class="rbc-article-body">
-                        <span class="rbc-article-tag">Mortgages &amp; Rates</span>
-                        <h3 class="rbc-article-title">Central Bank Interest Rates Explained and How They Shape Your Mortgage</h3>
+                        <span class="rbc-article-tag">Real Estate &amp; Rates</span>
+                        <h3 class="rbc-article-title">Central Financial Policy Rates Explained and How They Shape Property Financing</h3>
                         <p class="rbc-article-snippet">Understand how policy rate decisions directly impact fixed vs. variable payments, qualification tests, and future refinancing.</p>
                     </div>
                 </a>
@@ -576,8 +576,8 @@
                         <span style="position: relative; z-index: 2; color: #fff; font-size: 0.8rem; font-weight: 700; background: rgba(0,34,68,0.7); padding: 2px 8px; border-radius: 4px;"><i class="fas fa-store"></i> Enterprise</span>
                     </div>
                     <div class="rbc-article-body">
-                        <span class="rbc-article-tag">Business &amp; Commerce</span>
-                        <h3 class="rbc-article-title">Strategic Cash Flow Management to Help Scale Modern Enterprises</h3>
+                        <span class="rbc-article-tag">Corporate &amp; Commerce</span>
+                        <h3 class="rbc-article-title">Strategic Capital &amp; Liquidity Management to Help Scale Modern Enterprises</h3>
                         <p class="rbc-article-snippet">From hedging exchange volatility to managing equipment leasing, discover how top managers protect working capital.</p>
                     </div>
                 </a>
@@ -614,14 +614,14 @@
                     <div class="rbc-award-icon"><i class="fas fa-trophy"></i></div>
                     <div class="rbc-award-text">
                         <h4>Financial Service Excellence 2025</h4>
-                        <p>Recognized for Mobile Banking Excellence, Online Platform Reliability, and Financial Advice &amp; Planning.</p>
+                        <p>Recognized for Mobile Platform Excellence, Infrastructure Reliability, and Wealth Planning.</p>
                     </div>
                 </div>
 
                 <div class="rbc-award-item">
                     <div class="rbc-award-icon"><i class="fas fa-award"></i></div>
                     <div class="rbc-award-text">
-                        <h4>Top Digital Banking Provider 2026</h4>
+                        <h4>Top Digital Financial Platform 2026</h4>
                         <p>Awarded for outstanding cyber protection, rapid international settlements, and customer satisfaction.</p>
                     </div>
                 </div>
@@ -629,14 +629,14 @@
         </div>
     </section>
 
-    <!-- 10. BRANCH & ATM LOCATOR BANNER -->
+    <!-- 10. CLIENT CENTERS LOCATOR BANNER -->
     <section class="rbc-locator-banner">
         <div class="rbc-container">
             <div class="rbc-locator-box">
-                <h3 class="rbc-locator-title">Find a Branch or ATM Near You</h3>
-                <p class="rbc-locator-desc">Access thousands of partner ATMs and branch networks globally with 24/7 digital assistance.</p>
+                <h3 class="rbc-locator-title">Find Client Centers &amp; Global Access Points</h3>
+                <p class="rbc-locator-desc">Access thousands of partner access points and institutional facilities globally with 24/7 digital support.</p>
                 <form class="rbc-locator-form" action="{{ route('locations') }}" method="get">
-                    <input type="text" name="location" class="rbc-input" placeholder="Search by address, city, zip code or transit number">
+                    <input type="text" name="location" class="rbc-input" placeholder="Search by address, city, country, or routing identifier">
                     <button type="submit" class="rbc-btn-primary" style="padding: 10px 26px;">Search</button>
                 </form>
             </div>

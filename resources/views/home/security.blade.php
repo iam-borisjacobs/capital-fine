@@ -12,7 +12,7 @@
                     <i class="fas fa-shield-halved"></i> 100% SECURITY GUARANTEE
                 </span>
                 <h1 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 16px; line-height: 1.15;">
-                    Your Funds and Data are Inviolably Protected
+                    Your Capital and Data are Inviolably Protected
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
                     We deploy defense-grade 256-bit encryption, continuous biometric authentication, automated fraud anomaly detection, and full reimbursement protection for unauthorized transactions.
@@ -31,14 +31,14 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
                 <div>
                     <span class="rbc-badge-pill"><i class="fas fa-lock"></i> MULTI-LAYER DEFENSE</span>
-                    <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">How We Guard Every Dollar</h2>
+                    <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">How We Guard Every Asset</h2>
                     <p style="color: var(--rbc-text-secondary); line-height: 1.6; margin-bottom: 20px;">
                         Our global cyber intelligence center operates around the clock to neutralize threats before they ever reach your accounts.
                     </p>
                     <ul class="rbc-feature-list" style="margin-bottom: 24px;">
                         <li class="rbc-feature-item"><span><strong>Zero Liability Promise:</strong> You are 100% covered against unauthorized transactions when you follow basic security steps.</span></li>
                         <li class="rbc-feature-item"><span><strong>Hardware Security Keys:</strong> Support for YubiKey and biometric passkeys.</span></li>
-                        <li class="rbc-feature-item"><span><strong>Instant Card Freeze:</strong> Lock or unlock debit and credit cards in 1 tap from your portal.</span></li>
+                        <li class="rbc-feature-item"><span><strong>Instant Card Freeze:</strong> Freeze or unfreeze global smart cards with 1 tap from your client portal.</span></li>
                     </ul>
                     <a href="{{ route('alerts') }}" class="rbc-btn-primary">Configure Security Alerts</a>
                 </div>

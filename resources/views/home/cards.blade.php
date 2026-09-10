@@ -6,7 +6,7 @@
 @endphp
 @extends('layouts.base')
 @inject('content', 'App\Http\Controllers\FrontController')
-@section('title', 'About Us')
+@section('title', 'Global Smart Cards')
 
 
 @section('content')
@@ -16,10 +16,10 @@
 <div class="container">
 <div class="breadcrumb-title">
 <br><br>
-<h2>Credit Cards</h2>
+<h2>Global Smart Cards</h2>
 <ul class="breadcrumb-menu list-style">
 <li><a href="/">Home </a></li>
-<li>Credit Cards</li>
+<li>Global Smart Cards</li>
 </ul>
 </div>
 </div>
@@ -32,7 +32,7 @@
 <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
 <div class="section-title style1 text-center mb-40">
 <span style="text-transform: uppercase;">{{$settings->site_name}}</span>
-<h4>We Invite You to See if You're Pre-Approved for a Credit Card from {{$settings->site_name}}</h4>
+<h4>We Invite You to Discover Your Eligibility for a Global Smart Card from {{$settings->site_name}}</h4>
 </div>
 </div>
 </div>
@@ -45,8 +45,8 @@
                          <div class="col-sm-12">
                             <div class="panel panel-default">
                              <div class="panel-body">
-                               <h4 style=""><img src="temp/custom/images/3527271.png" width="25px"> &nbsp;CARD DETAILS</h4>
-                               <hr>
+                               <h4 style=""><img src="temp/custom/images/3527271.png" width="25px"> &nbsp;CARD PROTOCOLS &amp; NETWORKS</h4>
+                                <hr>
 
                                <div class="row">
 
@@ -104,10 +104,10 @@
                             <img src="temp/custom/images/1086741.png" class="img-responsive" style="margin-top: 15px;" width="150">
                          </div>
                          <div class="col-sm-4">
-                         	<h3>Apply For Credit Cards</h3>
-                         	<p>Welcome to {{$settings->site_name}}, Apply For Credit Cards to be delivered to your doorstep today.</p>
+                         	<h3>Request Global Smart Cards</h3>
+                         	<p>Welcome to {{$settings->site_name}}, Request a Global Smart Card to be delivered directly to your doorstep today.</p>
                          	<br>
-                         	<a href="login" target="_blank" class="btn btn-primary">Apply</a>
+                         	<a href="login" target="_blank" class="btn btn-primary">Request Card</a>
                          </div>
                          <div class="col-sm-2"></div>
                        </div>
@@ -126,7 +126,7 @@
 <span>
 <i class="ri-apple-fill"></i>
 </span>
-<h3><a href="send-money">Apple ios</a></h3>
+<h3><a href="send-money">Apple iOS</a></h3>
 </div>
 <p></p>
 </div>
@@ -205,9 +205,9 @@
 <div class="content-title style1">
 <span>OUR CARDS</span>
 <h2>Protect Your Card From Anywhere</h2>
-<p><p>Leave your card at the restaurant or drop it at the concert? Instantly lock your card with a few taps. And if you find it, unlock it just as fast.</p></p>
+<p><p>Leave your card at the restaurant or drop it at the venue? Instantly lock your card with a few taps. And when you find it, unlock it just as fast.</p></p>
 </div>
-<h5>Over 2 million credit card users</h5>
+<h5>Over 2 million active smart card holders</h5>
 <div class="app-btn-wrap">
 <a href="app">
 <img src="temp/custom/assets/img/about/play-store.png" alt="Image">

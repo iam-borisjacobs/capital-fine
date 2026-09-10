@@ -66,12 +66,12 @@
                         <div class="card">
                             <div class="card-header py-4" id="heading-1-7" data-toggle="collapse" role="button"
                                     data-target="#collapse-2-7" aria-expanded="false" aria-controls="collapse-2-7">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> What Is Bank Account?</h6>
+                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> What Is a Capital Account?</h6>
                             </div>
                             <div id="collapse-2-7" class="collapse" aria-labelledby="heading-2-7"
                                     data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>A bank account is a financial account maintained by a bank or other financial institution in which the financial transactions between the bank and a customer are recorded.</p>
+                                    <p>A capital account is a financial repository maintained by our institutional platform in which transactional liquidity, balances, and assets are securely managed and recorded.</p>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                             <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
                                     data-parent="#accordion-1">
                                 <div class="card-body">
-                                    <p>Your deposit will be reflected immediately once it is confirmed on the blockchain network</p>
+                                    <p>Your deposit will be reflected immediately once it is confirmed on the network</p>
                                 </div>
                             </div>
                         </div>
@@ -119,13 +119,12 @@
                         <div class="card">
                             <div class="card-header py-4" id="heading-1-5" data-toggle="collapse" role="button"
                                     data-target="#collapse-2-5" aria-expanded="false" aria-controls="collapse-2-5">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> What Are The Requirements For Business Loan?</h6>
+                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> What Are The Requirements For Structured Financing?</h6>
                             </div>
                             <div id="collapse-2-5" class="collapse" aria-labelledby="heading-2-5"
                                     data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>If you received a Paycheck Protection Program (PPP) loan, loan forgiveness isn’t automatic. You need to apply if you want your loan forgiven. You may need to include bank account statements on your PPP forgiveness application. <br>
-                                    Lenders want proof of your business’s incoming money. As a result, you may have to show your bank statements to the lender when you apply for a business loan. The lender reviews the statements to determine if you are a good fit for a loan.</p>
+                                    <p>Applicants should provide operating revenue histories, financial statements, and standard KYC compliance records. Our credit underwriting team evaluates statements to customize appropriate facilities for your growth.</p>
                                 </div>
                             </div>
                         </div>
@@ -137,12 +136,12 @@
                         <div class="card">
                             <div class="card-header py-4" id="heading-1-6" data-toggle="collapse" role="button"
                                     data-target="#collapse-2-6" aria-expanded="false" aria-controls="collapse-2-6">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How long does it take to process a withdrawal to an international bank?</h6>
+                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How long does it take to process an international settlement?</h6>
                             </div>
                             <div id="collapse-2-6" class="collapse" aria-labelledby="heading-2-6"
                                     data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>Once we receive your withdrawal request we process immediately and send to your Bank Account</p>
+                                    <p>Once we receive your settlement request we process immediately and route via institutional wire networks.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,11 +1,11 @@
 @extends('layouts.base')
 
-@section('title', 'Enroll &amp; Activate Online Banking')
+@section('title', 'Enroll &amp; Activate Digital Portal Access')
 
 @section('content')
 <div class="rbc-auth-card">
             <div class="rbc-auth-header">
-                <h1 style="font-size: 1.65rem; font-weight: 800; color: var(--rbc-navy); margin-bottom: 6px;">Enroll in RBC Online Banking</h1>
+                <h1 style="font-size: 1.65rem; font-weight: 800; color: var(--rbc-navy); margin-bottom: 6px;">Enroll in Client Digital Portal</h1>
                 <p style="font-size: 0.88rem; color: var(--rbc-text-muted);">Activate 24/7 digital access to your accounts in 3 easy steps</p>
             </div>
 
@@ -13,7 +13,7 @@
             <div style="display: flex; justify-content: space-between; margin-bottom: 30px; position: relative;">
                 <div style="text-align: center; flex: 1;">
                     <div style="width: 32px; height: 32px; background: var(--rbc-blue); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px auto; font-weight: 700; font-size: 0.85rem;">1</div>
-                    <span style="font-size: 0.75rem; font-weight: 700; color: var(--rbc-blue);">Card Details</span>
+                    <span style="font-size: 0.75rem; font-weight: 700; color: var(--rbc-blue);">Access Details</span>
                 </div>
                 <div style="text-align: center; flex: 1;">
                     <div style="width: 32px; height: 32px; background: #e2e8f0; color: var(--rbc-text-muted); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px auto; font-weight: 700; font-size: 0.85rem;">2</div>
@@ -28,8 +28,8 @@
             <!-- Registration Form -->
             <form action="login.html" method="get" onsubmit="event.preventDefault(); alert('Front-end simulation: Account registration information validated. Ready for backend integration.'); window.location.href={{ route('login') }};">
                 <div class="rbc-form-group">
-                    <label class="rbc-form-label" for="regCard">RBC Client Card (Debit) or Credit Card Number</label>
-                    <input type="text" id="regCard" class="rbc-input" placeholder="16-digit card number" required>
+                    <label class="rbc-form-label" for="regCard">Client ID or Global Smart Card Number</label>
+                    <input type="text" id="regCard" class="rbc-input" placeholder="16-digit card or client number" required>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="rbc-form-group">
-                    <label class="rbc-form-label" for="regPassword">Create New Online Banking Password</label>
+                    <label class="rbc-form-label" for="regPassword">Create New Portal Password</label>
                     <input type="password" id="regPassword" class="rbc-input" placeholder="Min 8 characters with numbers &amp; symbols" required>
                 </div>
 

@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Small Business & Commercial Banking')
+@section('title', 'Enterprise & Small Business Capital Solutions')
 
 @section('content')
     <!-- HERO -->
@@ -9,17 +9,17 @@
         <div class="rbc-container" style="position: relative; z-index: 2;">
             <div style="max-width: 720px; padding: 40px 0;">
                 <span class="rbc-badge-pill" style="background: rgba(254, 209, 0, 0.2); color: #fed100; border-color: rgba(254, 209, 0, 0.4);">
-                    <i class="fas fa-briefcase"></i> BUSINESS BANKING
+                    <i class="fas fa-briefcase"></i> ENTERPRISE CAPITAL
                 </span>
                 <h1 style="font-size: 2.8rem; font-weight: 800; color: #ffffff; margin-bottom: 16px; line-height: 1.15;">
                     Empower Your Business to Scale Faster and Smarter
                 </h1>
                 <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 28px;">
-                    From merchant point-of-sale systems to business credit lines and automated payroll, we supply the financial backbone your company needs.
+                    From digital payment gateways to working capital facilities and automated treasury payroll, we supply the financial infrastructure your company needs.
                 </p>
                 <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-                    <a href="{{ route('register') }}" class="rbc-btn-signin" style="padding: 12px 28px; font-size: 1rem;">Open Business Account <i class="fas fa-arrow-right"></i></a>
-                    <a href="{{ route('contact') }}" class="rbc-btn-secondary" style="border-color: #ffffff; color: #ffffff;">Speak to Commercial Banker</a>
+                    <a href="{{ route('register') }}" class="rbc-btn-signin" style="padding: 12px 28px; font-size: 1rem;">Open Commercial Account <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ route('contact') }}" class="rbc-btn-secondary" style="border-color: #ffffff; color: #ffffff;">Speak to Capital Advisor</a>
                 </div>
             </div>
         </div>
@@ -33,17 +33,17 @@
                     <img src="{{ asset('storage/app/public/photos/business_banner.jpg') }}" alt="Business Owners POS" style="width: 100%; height: auto; display: block;">
                 </div>
                 <div>
-                    <span class="rbc-badge-pill"><i class="fas fa-store"></i> MERCHANT SERVICES</span>
-                    <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">Next-Day Deposits &amp; Smart Terminals</h2>
+                    <span class="rbc-badge-pill"><i class="fas fa-store"></i> MERCHANT CLEARING</span>
+                    <h2 class="rbc-section-title" style="text-align: left; margin-bottom: 16px;">Next-Day Settlements &amp; Smart Gateways</h2>
                     <p style="color: var(--rbc-text-secondary); line-height: 1.6; margin-bottom: 20px;">
-                        Accept contactless cards, Apple Pay, Google Pay, and international currencies with competitive processing rates and next-morning fund settlement.
+                        Accept contactless global cards, mobile wallets, and international currencies with competitive processing rates and next-morning liquidity settlement.
                     </p>
                     <ul class="rbc-feature-list" style="margin-bottom: 24px;">
-                        <li class="rbc-feature-item"><span><strong>Commercial Credit Lines:</strong> Maintain liquidity for inventory and seasonal demand.</span></li>
-                        <li class="rbc-feature-item"><span><strong>Multi-User Access:</strong> Granular permissions for accountants and managers.</span></li>
-                        <li class="rbc-feature-item"><span><strong>Automated Invoicing:</strong> Send professional payment links directly to customers.</span></li>
+                        <li class="rbc-feature-item"><span><strong>Structured Capital Facilities:</strong> Maintain liquidity for inventory, expansion, and seasonal demand.</span></li>
+                        <li class="rbc-feature-item"><span><strong>Multi-User Controls:</strong> Granular permissions for financial controllers and treasurers.</span></li>
+                        <li class="rbc-feature-item"><span><strong>Automated Invoicing:</strong> Issue digital payment requests directly to global clients.</span></li>
                     </ul>
-                    <a href="{{ route('contact') }}" class="rbc-btn-primary">Get Business Solutions</a>
+                    <a href="{{ route('contact') }}" class="rbc-btn-primary">Explore Enterprise Solutions</a>
                 </div>
             </div>
         </div>

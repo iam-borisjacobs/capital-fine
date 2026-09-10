@@ -20,8 +20,8 @@ class HomePageController extends Controller
     private function getSettings()
     {
         return Settings::where('id', '=', '1')->first() ?? (object)[
-            'site_name' => 'Flutran Global Bank',
-            'site_title' => 'Personal & Commercial Banking',
+            'site_name' => 'Flutran Global Capital',
+            'site_title' => 'Institutional & Private Capital Solutions',
             'logo' => '',
             'favicon' => '',
             'contact_email' => 'support@flutranglobal.com',
@@ -65,7 +65,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.accounts', [
             'settings' => $settings,
-            'title' => 'Chequing & Savings Accounts',
+            'title' => 'Operating & High-Yield Accounts',
         ]);
     }
 
@@ -74,7 +74,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.credit-cards', [
             'settings' => $settings,
-            'title' => 'Credit Cards & Rewards',
+            'title' => 'Global Cards & Smart Rewards',
         ]);
     }
 
@@ -88,7 +88,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.mortgages', [
             'settings' => $settings,
-            'title' => 'Mortgages & Home Financing',
+            'title' => 'Property Solutions & Real Estate Financing',
         ]);
     }
 
@@ -97,7 +97,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.loans', [
             'settings' => $settings,
-            'title' => 'Personal & Business Loans',
+            'title' => 'Credit Facilities & Financing Solutions',
         ]);
     }
 
@@ -118,7 +118,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.business', [
             'settings' => $settings,
-            'title' => 'Small Business Banking',
+            'title' => 'Small Business & Enterprise Solutions',
         ]);
     }
 
@@ -127,7 +127,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.commercial', [
             'settings' => $settings,
-            'title' => 'Commercial & Corporate Banking',
+            'title' => 'Commercial & Corporate Treasury',
         ]);
     }
 
@@ -136,7 +136,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.digital-banking', [
             'settings' => $settings,
-            'title' => 'Digital & Online Banking',
+            'title' => 'Digital Client Platform',
         ]);
     }
 
@@ -163,7 +163,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.locations', [
             'settings' => $settings,
-            'title' => 'Find a Branch or ATM',
+            'title' => 'Client Centers & Global Access Points',
         ]);
     }
 
@@ -172,7 +172,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.rewards', [
             'settings' => $settings,
-            'title' => 'Avion & Banking Rewards',
+            'title' => 'Client Rewards & Privileges',
         ]);
     }
 
@@ -286,7 +286,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.services', [
             'settings' => $settings,
-            'title' => 'Banking Services Directory',
+            'title' => 'Financial & Capital Solutions Directory',
         ]);
     }
 
@@ -304,7 +304,7 @@ class HomePageController extends Controller
         $settings = $this->getSettings();
         return view('home.apps', [
             'settings' => $settings,
-            'title' => 'Mobile Banking Application',
+            'title' => 'Digital Client Platform & Mobile Apps',
         ]);
     }
 

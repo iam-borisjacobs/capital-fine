@@ -483,7 +483,7 @@
                                 <h3 class="text-sm font-medium text-yellow-800">Security Alert</h3>
                                 <div class="mt-2 text-sm text-yellow-700">
                                     <p>
-                                        Keep your transaction PIN confidential. Never share your PIN with anyone, including bank representatives.
+                                        Keep your transaction PIN confidential. Never share your PIN with anyone, including staff representatives.
                                     </p>
                                 </div>
                             </div>

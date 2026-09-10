@@ -215,7 +215,7 @@
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                                 @if (!empty($payment_mode->bankname))
                                             <div>
-                                                <label class="block text-sm font-medium text-gray-700 mb-1">Bank Name</label>
+                                                <label class="block text-sm font-medium text-gray-700 mb-1">Beneficiary Financial Institution / Bank</label>
                                                 <div class="flex">
                                                     <input type="text" value="{{$payment_mode->bankname}}" 
                                                            class="block w-full py-2 px-3 border border-gray-200 rounded-l-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all text-gray-700" 
@@ -281,7 +281,7 @@
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                                 @if (!empty($payment_mode->bankname))
                                         <div>
-                                            <label class="block text-sm font-medium text-gray-700 mb-1">Bank Name</label>
+                                            <label class="block text-sm font-medium text-gray-700 mb-1">Beneficiary Financial Institution / Bank</label>
                                             <div class="flex">
                                                 <input type="text" value="{{$payment_mode->bankname}}" 
                                                        class="block w-full py-2 px-3 border border-gray-200 rounded-l-lg bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all text-gray-700" 

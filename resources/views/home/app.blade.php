@@ -130,8 +130,8 @@
 <div class="content-title style1">
 <span>OUR APP</span>
 <h2>Let's Answer Some Of Your Questions Or Download Our App</h2>
-<p>Our digital banking platform is up to date and completely trustworthy.
-You can use your mobile to perform transactions, loan requests, and credit card transactions.</p>
+<p>Our digital capital platform is up to date and completely trustworthy.
+You can use your mobile to execute settlements, structured financing requests, and global card management.</p>
 </div>
 <h5>Over 9.2 million Downloads Worldwide</h5>
 <div class="app-btn-wrap">

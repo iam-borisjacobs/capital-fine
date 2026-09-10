@@ -12,8 +12,8 @@
     <meta name="duckduckbot" content="noindex, nofollow">
     <meta name="baiduspider" content="noindex, nofollow">
     <meta name="yandex" content="noindex, nofollow">
-    <meta name="description" content="{{ $settings->site_name ?? 'Flutran Global' }} - Personal & Commercial Banking, Mortgages, Credit Cards, Investments and Loans.">
-    <title>@yield('title', 'Welcome') | {{ $settings->site_name ?? 'Flutran Global Bank' }}</title>
+    <meta name="description" content="{{ $settings->site_name ?? 'Flutran Global' }} - Personal & Commercial Solutions, Property Financing, Global Cards, Strategic Investments and Capital Facilities.">
+    <title>@yield('title', 'Welcome') | {{ $settings->site_name ?? 'Flutran Global' }}</title>
 
     @if(!empty($settings->favicon))
         <link rel="icon" href="{{ asset('storage/app/public/'.$settings->favicon) }}" type="image/png">
@@ -40,7 +40,7 @@
                 </ul>
                 <div class="rbc-topbar-right">
                     <a href="{{ route('rates') }}"><i class="fas fa-chart-line"></i> Rates &amp; FX</a>
-                    <a href="{{ route('locations') }}"><i class="fas fa-location-dot"></i> Find Branch / ATM</a>
+                    <a href="{{ route('locations') }}"><i class="fas fa-location-dot"></i> Global Access Points</a>
                     <a href="{{ route('contact') }}"><i class="fas fa-headset"></i> Contact Us</a>
                     <a href="{{ route('login') }}" style="color: var(--rbc-gold); font-weight: 700;"><i class="fas fa-lock"></i> Sign In</a>
                 </div>
@@ -54,21 +54,21 @@
             <div class="rbc-main-nav-inner">
                 <a href="{{ route('home') }}" class="rbc-brand">
                     @if(!empty($settings->logo))
-                        <img src="{{ asset('storage/app/public/'.$settings->logo) }}" alt="{{ $settings->site_name ?? 'Flutran Global Bank' }}" class="rbc-logo-img">
+                        <img src="{{ asset('storage/app/public/'.$settings->logo) }}" alt="{{ $settings->site_name ?? 'Flutran Global' }}" class="rbc-logo-img">
                     @else
                         <div class="rbc-brand-crest">
                             <i class="fas fa-shield-halved"></i>
                         </div>
                         <div class="rbc-brand-text">
-                            <span class="rbc-brand-title">{{ $settings->site_name ?? 'Flutran Global Bank' }}</span>
-                            <span class="rbc-brand-tag">Online Banking</span>
+                            <span class="rbc-brand-title">{{ $settings->site_name ?? 'Flutran Global' }}</span>
+                            <span class="rbc-brand-tag">Client Financial Portal</span>
                         </div>
                     @endif
                 </a>
 
                 <div class="rbc-header-actions">
                     <form class="rbc-search-form" action="{{ route('help') }}" method="get">
-                        <input type="text" name="q" class="rbc-search-input" placeholder="Search {{ $settings->site_name ?? 'Bank' }}...">
+                        <input type="text" name="q" class="rbc-search-input" placeholder="Search {{ $settings->site_name ?? 'Platform' }}...">
                         <button type="submit" class="rbc-search-btn" aria-label="Search">
                             <i class="fas fa-search"></i>
                         </button>
@@ -101,46 +101,46 @@
                         Accounts <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
                     </a>
                     <div class="rbc-dropdown">
-                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Chequing Accounts <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Savings Accounts <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Student &amp; Youth Banking <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Senior Banking <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Operating Accounts <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">High-Yield Savings <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Student &amp; Youth Solutions <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Senior &amp; Executive Accounts <i class="fas fa-arrow-right"></i></a>
                         <a href="{{ route('accounts') }}" class="rbc-dropdown-item">Compare All Accounts <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </li>
-                <li class="rbc-subnav-item {{ request()->routeIs('credit-cards') ? 'active' : '' }}">
+                <li class="rbc-subnav-item {{ request()->routeIs('credit-cards') || request()->routeIs('cards') ? 'active' : '' }}">
                     <a href="{{ route('credit-cards') }}" class="rbc-subnav-link">
-                        Credit Cards <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                        Global Cards <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
                     </a>
                     <div class="rbc-dropdown">
-                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Cash Back Cards <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Travel Points <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">No Annual Fee Cards <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Low Interest Cards <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Smart Rewards Cards <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Global Travel Passes <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">No Annual Fee Solutions <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Low Rate Facilities <i class="fas fa-arrow-right"></i></a>
                         <a href="{{ route('credit-cards') }}" class="rbc-dropdown-item">Card Selector Tool <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </li>
                 <li class="rbc-subnav-item {{ request()->routeIs('mortgages') ? 'active' : '' }}">
                     <a href="{{ route('mortgages') }}" class="rbc-subnav-link">
-                        Mortgages <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                        Property Solutions <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
                     </a>
                     <div class="rbc-dropdown">
-                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">Fixed Rate Mortgages <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">Variable Rate Mortgages <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">First-Time Home Buyers <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('calculators') }}" class="rbc-dropdown-item">Mortgage Calculator <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">Renew or Refinance <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">Fixed Rate Property Financing <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">Variable Rate Solutions <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">First-Time Property Buyers <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('calculators') }}" class="rbc-dropdown-item">Financing Estimator <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('mortgages') }}" class="rbc-dropdown-item">Renew or Restructure <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </li>
                 <li class="rbc-subnav-item {{ request()->routeIs('loans') ? 'active' : '' }}">
                     <a href="{{ route('loans') }}" class="rbc-subnav-link">
-                        Loans <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                        Credit &amp; Financing <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
                     </a>
                     <div class="rbc-dropdown">
-                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Personal Loans <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Lines of Credit <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Auto Financing <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Home Equity (HELOC) <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Personal Credit Facilities <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Strategic Lines of Credit <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Asset Financing <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('loans') }}" class="rbc-dropdown-item">Property Equity Solutions <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </li>
                 <li class="rbc-subnav-item {{ request()->routeIs('investments') ? 'active' : '' }}">
@@ -148,9 +148,9 @@
                         Investments <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
                     </a>
                     <div class="rbc-dropdown">
-                        <a href="{{ route('investments') }}" class="rbc-dropdown-item">GICs &amp; Term Deposits <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('investments') }}" class="rbc-dropdown-item">Mutual Funds <i class="fas fa-arrow-right"></i></a>
-                        <a href="{{ route('investments') }}" class="rbc-dropdown-item">TFSA &amp; RRSP <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('investments') }}" class="rbc-dropdown-item">Guaranteed Term Deposits <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('investments') }}" class="rbc-dropdown-item">Portfolio Funds <i class="fas fa-arrow-right"></i></a>
+                        <a href="{{ route('investments') }}" class="rbc-dropdown-item">Tax-Advantaged Accounts <i class="fas fa-arrow-right"></i></a>
                         <a href="{{ route('investments') }}" class="rbc-dropdown-item">Direct Investing <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </li>
@@ -164,7 +164,7 @@
                     <a href="{{ route('calculators') }}" class="rbc-subnav-link">Calculators</a>
                 </li>
                 <li class="rbc-subnav-item {{ request()->routeIs('digital-banking') ? 'active' : '' }}">
-                    <a href="{{ route('digital-banking') }}" class="rbc-subnav-link">Digital Banking</a>
+                    <a href="{{ route('digital-banking') }}" class="rbc-subnav-link">Digital Platform</a>
                 </li>
             </ul>
         </div>
@@ -185,7 +185,7 @@
                         <li><a href="{{ route('careers') }}"><i class="fas fa-angle-right"></i> Careers &amp; Culture</a></li>
                         <li><a href="{{ route('newsroom') }}"><i class="fas fa-angle-right"></i> Newsroom &amp; Media</a></li>
                         <li><a href="{{ route('investors') }}"><i class="fas fa-angle-right"></i> Investor Relations</a></li>
-                        <li><a href="{{ route('services') }}"><i class="fas fa-angle-right"></i> Banking Services Directory</a></li>
+                        <li><a href="{{ route('services') }}"><i class="fas fa-angle-right"></i> Financial Services Directory</a></li>
                     </ul>
                 </div>
 
@@ -194,7 +194,7 @@
                     <h4>Customer Service</h4>
                     <ul class="rbc-footer-links">
                         <li><a href="{{ route('accounts') }}"><i class="fas fa-angle-right"></i> Apply Online</a></li>
-                        <li><a href="{{ route('locations') }}"><i class="fas fa-angle-right"></i> Branch &amp; ATM Locator</a></li>
+                        <li><a href="{{ route('locations') }}"><i class="fas fa-angle-right"></i> Client Centers &amp; Locations</a></li>
                         <li><a href="{{ route('help') }}"><i class="fas fa-angle-right"></i> Help Centre &amp; FAQs</a></li>
                         <li><a href="{{ route('contact') }}"><i class="fas fa-angle-right"></i> Book an Appointment</a></li>
                         <li><a href="{{ route('contact') }}"><i class="fas fa-phone"></i> {{ $settings->contact_email ?? 'Support' }}</a></li>
@@ -207,24 +207,24 @@
                     <ul class="rbc-footer-links">
                         <li><a href="{{ route('rates') }}"><i class="fas fa-angle-right"></i> Foreign Exchange Rates</a></li>
                         <li><a href="{{ route('rates') }}"><i class="fas fa-angle-right"></i> Prime Lending Rate</a></li>
-                        <li><a href="{{ route('mortgages') }}"><i class="fas fa-angle-right"></i> Mortgage Rates</a></li>
-                        <li><a href="{{ route('investments') }}"><i class="fas fa-angle-right"></i> GIC &amp; Wealth Rates</a></li>
+                        <li><a href="{{ route('mortgages') }}"><i class="fas fa-angle-right"></i> Property Financing Rates</a></li>
+                        <li><a href="{{ route('investments') }}"><i class="fas fa-angle-right"></i> Guaranteed Wealth Rates</a></li>
                         <li><a href="{{ route('calculators') }}"><i class="fas fa-angle-right"></i> Financial Calculators</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 4: Protecting Your Money -->
                 <div class="rbc-footer-col">
-                    <h4>Protecting Your Money</h4>
+                    <h4>Protecting Your Capital</h4>
                     <ul class="rbc-footer-links">
                         <li><a href="{{ route('security') }}"><i class="fas fa-shield-halved"></i> 100% Security Guarantee</a></li>
-                        <li><a href="{{ route('security') }}"><i class="fas fa-angle-right"></i> Cybersecurity Tips</a></li>
+                        <li><a href="{{ route('security') }}"><i class="fas fa-angle-right"></i> Cybersecurity Standards</a></li>
                         <li><a href="{{ route('alerts') }}"><i class="fas fa-angle-right"></i> Fraud &amp; Alert Settings</a></li>
                     </ul>
                     <div class="rbc-cdic-badge">
                         <div class="rbc-cdic-icon"><i class="fas fa-building-shield"></i></div>
                         <div class="rbc-cdic-text">
-                            {{ $settings->site_name ?? 'Flutran Global' }} is a recognized institutional banking network member.
+                            {{ $settings->site_name ?? 'Flutran Global' }} operates institutional financial infrastructure with enterprise custody standards.
                         </div>
                     </div>
                 </div>
@@ -235,7 +235,7 @@
             <div class="rbc-container">
                 <div class="rbc-footer-bottom-inner">
                     <div>
-                        {{ $settings->site_name ?? 'Flutran Global Bank' }} Website, &copy; 1995-{{ date('Y') }}. All rights reserved.
+                        {{ $settings->site_name ?? 'Flutran Global' }} Platform, &copy; 1995-{{ date('Y') }}. All rights reserved.
                     </div>
                     <ul class="rbc-legal-links">
                         <li><a href="{{ route('privacy') }}">Privacy &amp; Security</a></li>
