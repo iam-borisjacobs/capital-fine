@@ -1,11 +1,11 @@
 /**
- * Royal Bank (RBC Style) Interactive Front-End Engine
+ * Interactive Portal Front-End Engine
  */
 
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Mobile Menu Navigation Toggle
-    const mobileToggle = document.getElementById('rbcMobileToggle');
-    const subnavList = document.getElementById('rbcSubnavList');
+    const mobileToggle = document.getElementById('flMobileToggle');
+    const subnavList = document.getElementById('flSubnavList');
 
     if (mobileToggle && subnavList) {
         mobileToggle.addEventListener('click', function() {
@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // 2. Mobile Dropdown Accordion Toggle
-    const subnavItems = document.querySelectorAll('.rbc-subnav-item');
+    const subnavItems = document.querySelectorAll('.fl-subnav-item');
     subnavItems.forEach(item => {
-        const link = item.querySelector('.rbc-subnav-link');
-        const dropdown = item.querySelector('.rbc-dropdown');
+        const link = item.querySelector('.fl-subnav-link');
+        const dropdown = item.querySelector('.fl-dropdown');
         if (dropdown && link) {
             link.addEventListener('click', function(e) {
                 if (window.innerWidth <= 768) {
@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // 3. Category Accordion in "How can we help you today?"
-    const accordions = document.querySelectorAll('.rbc-category-accordion');
+    const accordions = document.querySelectorAll('.fl-category-accordion');
     accordions.forEach(acc => {
-        const trigger = acc.querySelector('.rbc-accordion-trigger');
+        const trigger = acc.querySelector('.fl-accordion-trigger');
         if (trigger) {
             trigger.addEventListener('click', () => {
                 const isActive = acc.classList.contains('active');
@@ -170,14 +170,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // 7. Tab Switchers
-    const tabBtns = document.querySelectorAll('.rbc-tab-btn');
+    const tabBtns = document.querySelectorAll('.fl-tab-btn');
     tabBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const tabGroup = btn.getAttribute('data-tab-group');
             const targetTab = btn.getAttribute('data-tab-target');
 
-            document.querySelectorAll(`.rbc-tab-btn[data-tab-group="${tabGroup}"]`).forEach(b => b.classList.remove('active'));
-            document.querySelectorAll(`.rbc-tab-content[data-tab-group="${tabGroup}"]`).forEach(c => c.style.display = 'none');
+            document.querySelectorAll(`.fl-tab-btn[data-tab-group="${tabGroup}"]`).forEach(b => b.classList.remove('active'));
+            document.querySelectorAll(`.fl-tab-content[data-tab-group="${tabGroup}"]`).forEach(c => c.style.display = 'none');
 
             btn.classList.add('active');
             const activeContent = document.getElementById(targetTab);

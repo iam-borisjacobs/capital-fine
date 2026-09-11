@@ -1,13 +1,35 @@
+# Security & Anti-Indexing Headers
 <IfModule mod_headers.c>
     Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
 
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
+# Disable Directory Browsing
+<IfModule mod_negotiation.c>
+    Options -MultiViews -Indexes
+</IfModule>
 
+# Block Sensitive Files & Extensions
+<FilesMatch "(^\.env|\.sql$|\.zip$|\.gz$|\.tar$|\.bak$|\.log$|composer\.(json|lock)$|package(-lock)?\.json$|artisan$|phpunit\.xml$|\.git)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Block Direct Access to Framework Directories
+<IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # Allow public media, photos, and assets in storage/app/public
+    RewriteRule ^storage/app/public/(.*)$ - [L]
+
+    # Block sensitive storage subdirectories (framework, logs, private data)
+    RewriteRule ^storage(/.*)?$ - [F,L,NC]
+
+    # Prevent direct access to internal Laravel folders
+    RewriteRule ^(app|bootstrap|config|database|resources|routes|tests|vendor)(/.*)?$ - [F,L,NC]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
